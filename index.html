@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Studio Ghibli">
+    <meta name="author" content="Crislaney & Fernanda">
+
+    <title>Susuwatari</title>
+    <link rel="apple-touch-icon" sizes="57x57"   href="icons/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60"   href="icons/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72"   href="icons/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76"   href="icons/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114"   href="icons/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120"   href="icons/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144"   href="icons/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152"   href="icons/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180"   href="icons/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"    href="icons/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32"   href="icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96"   href="icons/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16"   href="icons/favicon/favicon-16x16.png">
+	<link rel="manifest"   href="icons/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstap -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">  
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+	<!-- Css e JavaScript -->
+	<link href="css/c.css" rel="stylesheet">
+	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	<script src="assets/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<!-- Navegador -->
+		<nav class="navbar" aria-label="barra de navegação">
+		    <div class="container-fluid">
+
+			    <!-- Logo -->
+			    <a id="logo" href="index.html"><img src="icons/logo1.png" id="imagem-logo" alt="susuwatari"></a>
+
+		    	<!-- Botão -->
+		    	<div class="div-pesquisar">
+					<form action="/action_page.php">
+						<input class="input" id="search" type="search" name="filmes" placeholder="Pesquisar" required>
+						<button class="botao"><span class="mglass">&#9906;</span></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Seção Principal -->		
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+				<!-- Botões setas -->
+		    <div class="carousel-indicators">
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		    </div>
+
+		    <!-- Carrosel -->
+		    <div class="carousel-inner">
+
+				<div class="carousel-item active">
+					<div class="bd-placeholder-img">
+					    <a href="index.html"><img class="imagem-retangulo" src="imagens/capa.png" alt="Capa logo Studio Ghibli fundo azul e texto braco"></a>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="bd-placeholder-img">
+						<a href="#"><img class="imagem-retangulo" src="imagens/ponyo.jpg" alt="Imagem do filme Ponyo"></a>
+					</div>
+
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Ponyo: Uma Amizade que Veio do Mar</h1>		  
+							<p lang="ja">崖の上のポニョ</p>    
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="bd-placeholder-img">
+					    <img class="imagem-retangulo" src="imagens/kiki.jpg" alt="Imagem do filme Serviço de entregas da kiki">
+					</div>
+
+					<div class="container">
+						<div class="carousel-caption text-end">
+							<h1>O Serviço de Entregas da Kiki</h1>
+							<p lang="ja">魔女の宅急便</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+
+		    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+		    </button>
+
+		    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Próximo</span>
+		    </button>		    
+		</div>
+
+		<!-- Album -->
+
+		<div class="album py-5 bg-light">
+	    	<div class="container">
+			    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+			        <div class="col">	  
+		        		<a href="html/a-viagem-de-chihiro.html"><img class="thumbnail" src="imagens/chiriro.png" alt="A Viagem de Chiriro"></a>  
+		        		<label class="texto-img">A Viagem de Chihiro</label>         	
+			        </div>
+
+			        <div class="col">	           
+		           		<a href="html/vidas-ao-vento.html"><img class="thumbnail" src="imagens/vidas-ao-vento.jpg" alt="Vidas ao Vento"></a>  
+		            	<label class="texto-img">Vidas ao Vento</label>          	
+			        </div>
+
+			        <div class="col">	  
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/princesa-kaguya.webp" alt="O Conto da Princesa Kaguya"></a>  
+		        		<label class="texto-img">O Conto da Princesa Kaguya</label>           	
+			        </div>
+
+			        <div class="col">	           
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/kokuriko.jpg" alt="Da Colina Kokuriko"></a>  
+		        		<label class="texto-img">Da Colina Kokuriko</label>          	
+			        </div>
+
+			        <div class="col">
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/marnie.jpg" alt="As Memórias de Marnie"></a>  
+		            	<label class="texto-img">As Memórias de Marnie</label>            	
+			        </div>
+
+			        <div class="col">	 
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/totoro.jpg" alt="Meu Amigo Totoro"></a>  
+		        		<label class="texto-img">Meu Amigo Totoro</label>          	
+			        </div>
+
+			        <div class="col">	  
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/O-Castelo-Animado.webp" alt="O Castelo Animado"></a>  
+		        		<label class="texto-img">O Castelo Animado</label>           	
+			        </div>
+
+			        <div class="col">	     
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/O-Mundo-dos-Pequeninos.jpg" alt="O Mundo dos Pequeninos"></a>  
+		        		<label class="texto-img">O Mundo dos Pequeninos</label>
+			        </div>
+
+			        <div class="col">	  
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/ocean-waves.jpeg" alt="Eu Posso Ouvir o Oceano"></a>  
+		        		<label class="texto-img">Eu Posso Ouvir o Oceano</label>     	
+			        </div>
+
+			        <div class="col">	 
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/o-reino-dos-gatos.png" alt="O Reino dos Gatos"></a>  
+		        		<label class="texto-img">O Reino dos Gatos</label>          	
+			        </div>
+
+			        <div class="col">
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/contos-de-terramar.png" alt="Contos de Terramar"></a>  
+		        		<label class="texto-img">Contos de Terramar</label>           	
+			        </div>
+
+			        <div class="col">	           
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/ponyo-thumb.webp" alt="Ponyo"></a>  
+		        		<label class="texto-img">Ponyo</label>         	
+			        </div>
+
+			        <div class="col">
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/o-castelo-no-ceu.jpg" alt="O Castelo no Céu"></a>  
+		        		<label class="texto-img">O Castelo no Céu</label>           	
+			        </div>
+
+			        <div class="col">	
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/sussuros-do-coracao.png" alt="Sussuros do Coração"></a>  
+		        		<label class="texto-img">Sussurros do Coração</label>       	
+			        </div>
+
+			        <div class="col">	           
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/Princesa-Mononoke.webp" alt="Princesa Mononoke"></a>  
+		        		<label class="texto-img">Princesa Mononoke</label>         	
+			        </div>
+
+			        <div class="col">	 
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/pompoko.jpg" alt="PomPoko"></a>  
+		        		<label class="texto-img">PomPoko</label>
+		      	
+			        </div>
+
+			        <div class="col">	 
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/porco-rosso.jpg" alt="Porco Rosso"></a>  
+		        		<label class="texto-img">Porco Rosso</label>          	
+			        </div>
+
+			        <div class="col">	
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/memorias-de-ontem.jpg" alt="Memórias de Ontem"></a>  
+		        		<label class="texto-img">Memórias de Ontem</label>           	
+			        </div>
+
+			        <div class="col">	           
+						<a href="pg1.html"><img class="thumbnail" src="imagens/kikis-delivery.jpg" alt="O Serviço de Entregas da Kiki"></a>  
+		            	<label class="texto-img">O Serviço de Entregas da Kiki</label>
+			        </div>
+
+			        <div class="col">	           
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/Nausicaä-do-Vale-do-Vento.webp" alt="Nausicaä do Vale do Vento"></a>  
+		        		<label class="texto-img">Nausicaä do Vale do Vento</label>         	
+			        </div>
+
+			        <div class="col">	
+		        		<a href="pg1.html">	<img class="thumbnail" src="imagens/o-tumulo-dos-vagalumes.png" alt="O Tumulo dos vagalumes"></a>  
+		        		<label class="texto-img">O Túmulo dos vagalumes</label>
+			        </div>
+
+			        <div class="col">	
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/yamadas.jpg" alt="Meus vizinhos, Os Yamadas"></a>  
+		        		<label class="texto-img">Meus vizinhos, Os Yamadas</label>
+			        </div>
+
+			        <div class="col">	
+		        		<a href="pg1.html"><img class="thumbnail" src="imagens/aya-e-a-bruxa.jpg" alt="Aya e a Bruxa"></a>  
+		        		<label class="texto-img">Aya e a Bruxa</label>          	
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="rodape">
+			<button id="scroll-up"><span id="seta">&#10140;</span></button>
+			<img src="icons/logo1.png" id="imagem-logo2" alt="susuwatari">
+			
+		</div>
+		<div id="texto-rodape">
+			<p>Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda & Crislaney | 2022</p>
+		</div>
+	</footer>
+	<div>
+		<div class="container-out">
+		    <div class="container-in">
+			    <div class="search-container">
+			        <div class="search-engine">
+			        	<p class="search-title">Search Names</p>
+				        <input
+				            type="input"
+				            id="search-input"
+				            autocomplete="off"
+				            placeholder="Hit Enter to Search"
+				        />
+			        </div>
+			        <div id="search-results"></div>
+			        <div id="search-data"></div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<script src="js/javascript.js"></script>
+	<script src="js/lista.js"></script>
+
+</body>
+
+</html>
+
+
