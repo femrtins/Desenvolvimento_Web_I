@@ -52,7 +52,7 @@
 
     function displayData(name) {
         if (document.title == "Susuwatari"){
-            window.open("../root/html/"+names[name], "mozillaTab");
+            window.open("html/"+names[name], "mozillaTab");
         }
         else{
             window.open("../html/"+names[name], "mozillaTab");
