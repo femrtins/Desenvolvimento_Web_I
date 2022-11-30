@@ -265,17 +265,18 @@ h1{
 
 
 table.ghibli-table {
-  background-color: #149ED0;
-  width: 100%;
-  text-align: left;
+   background-color: #149ED0;
+   width: 100%;
+   text-align: left;
 }
 table.ghibli-table td, table.ghibli-table th {
-  border: 1px solid #FFFFFF;
-  padding: 10px 9px;
+   border: 1px solid #FFFFFF;
+   padding: 10px 9px;
+   font-size: 16px;
+   color: #FFFFFF;
 }
-table.ghibli-table tbody td {
-  font-size: 16px;
-  color: #FFFFFF;
+table.ghibli-table th {
+  font-weight: bold;
 }
 
 #bandeira{
@@ -351,7 +352,7 @@ table.ghibli-table tbody td {
       margin: auto;
    }
 
-   ..container-out{
+   .container-out{
       width: 100%;
       text-align: center;
       margin: auto;
@@ -367,13 +368,14 @@ table.ghibli-table tbody td {
    #search-engine{
       margin: 0 auto;
    }
+
    input[type="text"]{
       margin-right: 50px;
       background-color: #ff944e;
       color: white;
-     width: 80%;
-     border-bottom: 1px solid #BBB;
-     cursor: text;
+      width: 80%;
+      border-bottom: 1px solid #BBB;
+      cursor: text;
    }
 
    #imagem-logo{

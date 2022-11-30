@@ -112,7 +112,7 @@ input[type="submit"]:hover {
 	margin-left: auto;
 	border-radius: 25px;
 	opacity: 0;
-	top: 50px;
+	top: 52px;
 	z-index: 2;
 	background-color: #ff944e;
 	width: 80%;
@@ -319,6 +319,7 @@ img.thumbnail{
 	#search-engine{
 		margin: 0 auto;
 	}
+	
 	input[type="text"]{
 		margin-right: 50px;
 		background-color: #ff944e;

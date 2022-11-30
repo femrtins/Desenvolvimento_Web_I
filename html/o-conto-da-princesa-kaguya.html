@@ -50,7 +50,7 @@
 </head>
 <body>
     
-	<div class="div-box" aria-label="Imagem do filme O Conto da Princesa Kaguya">
+	<div class="div-box">
 		<header>
 			<!-- Navegador -->
 			<nav class="navbar" aria-label="barra de navegação">
@@ -63,8 +63,8 @@
 					<div class="container-out">
 					    <div class="search-container">
 					        <form id="search-engine">
-						        <input id="search" type="text" onblur="desfocus()"/>
-						        <input id="search_submit" type="submit" value="">
+						        <input id="search" type="text" onblur="desfocus()" autocomplete="off">
+						        <input id="search_submit" type="submit">
 						        <div id="search-results"></div>
 					        </form>				     
 					        <div id="search-data"></div>
@@ -94,63 +94,63 @@
 				<table class="ghibli-table">
 					<tbody>
 						<tr>
-							<td>Duração</td>
+							<th>Duração</th>
 							<td>137 min</td>
 						</tr>	
 						<tr>
-							<td>Direção</td>
+							<th>Direção</th>
 							<td>Isao Takahata</td>
 						</tr>	
 						<tr>
-							<td>Produção</td>
+							<th>Produção</th>
 							<td>Yoshiaki Nishimura<br>Seiichiro Ujiie</td>
 						</tr>
 						<tr>
-							<td>Roteiro</td>
+							<th>Roteiro</th>
 							<td>Isao Takahata<br>Riko Sakaguchi</td>
 						</tr>
 						<tr>
-							<td>Elenco</td>
+							<th>Elenco</th>
 							<td>Aki Asakura<br>Kengo Kora<br>Takeo Chii<br>Nobuko Miyamoto</td>
 						</tr>
 						<tr>
-							<td>Gênero</td>
+							<th>Gênero</th>
 							<td>Fantasia<br>Drama</td>
 						</tr>
 						<tr>
-							<td>Música</td>
+							<th>Música</th>
 							<td>Joe Hisaishi</td>
 						</tr>
 						<tr>
-							<td>Cinematografia</td>
+							<th>Cinematografia</th>
 							<td>Keisuke Nakamura</td>
 						</tr>
 						<tr>
-							<td>Direção de arte</td>
+							<th>Direção de arte</th>
 							<td>Kazuo Oga</td>
 						</tr>
 						<tr>
-							<td>Edição</td>
+							<th>Edição</th>
 							<td>Toshihiko Kojima</td>
 						</tr>
 						<tr>
-							<td>Companhia(s) produtora(s)</td>
+							<th>Companhia(s) produtora(s)</th>
 							<td>Studio Ghibli</td>
 						</tr>
 						<tr>
-							<td>Lançamento <img id="bandeira" alt="Bandeira do Brasil" src="../icons/bandeira-brasil.png"></td>
+							<th>Lançamento <img id="bandeira" alt="Bandeira do Brasil" src="../icons/bandeira-brasil.png"></th>
 							<td>16 de julho de 2015</td>
 						</tr>
 						<tr>
-							<td>Idioma</td>
+							<th>Idioma</th>
 							<td>Japonês</td>
 						</tr>
 						<tr>
-							<td>Orçamento</td>
+							<th>Orçamento</th>
 							<td>¥5 bilhões</td>
 						</tr>
 						<tr>
-							<td>Receita</td>
+							<th>Receita</th>
 							<td>US$24,3 milhões</td>
 						</tr>
 					</tbody>
@@ -182,7 +182,6 @@
 				</a>
 				<a href="https://tv.apple.com/br/movie/fortllingen-om-prinsesse-kaguya/umc.cmc.1c9r7skqwjgu2vvdpfdscaq8b?action=play"><img class="icon" alt="AppleTv" src="../icons/apple.png">
 				</a>
-
 			</div>
 		</div>
 	</main>
@@ -190,8 +189,7 @@
 	<footer>
 		<div id="rodape">
 			<button id="scroll-up"><span id="seta">&#10140;</span></button>
-			<img src="../icons/logo1.png" id="imagem-logo2" alt="susuwatari">
-			
+			<img src="../icons/logo1.png" id="imagem-logo2" alt="susuwatari">			
 		</div>
 		<div id="texto-rodape">
 			<p>Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda & Crislaney | 2022</p>
