@@ -129,7 +129,7 @@ input[type="text"]:focus ~ input[type="submit"]{
 }
 
 .search-item:last-child{
-		border-bottom: none;
+	border-bottom: none;
 }
 
 .search-item p {
@@ -300,7 +300,7 @@ input[type="text"]:focus ~ input[type="submit"]{
  * Mobile
  */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 620px){
 	.container-fluid{
 		display: flex;
 		flex-direction: column;
@@ -359,4 +359,11 @@ input[type="text"]:focus ~ input[type="submit"]{
 	input[type="submit"]{
 		background: url(../icons/fechar.png) center center no-repeat;
 	}
+}
+
+@media only screen and (max-width: 400px){
+   #imagem-logo2{
+      width: 80%;
+      height: auto;
+   }
 }

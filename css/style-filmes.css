@@ -277,6 +277,7 @@ main {
 
 .icon{
    margin-right: 20px;
+   margin-bottom: 20px;
    width: 100px;
    border-radius: 20px;
 }
@@ -368,7 +369,7 @@ table.ghibli-table th {
  * Mobile
  */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 620px){
    .container-fluid{
       display: flex;
       flex-direction: column;
@@ -383,6 +384,13 @@ table.ghibli-table th {
       text-align: center;
       margin: auto;
       display: flex;
+      justify-content: center;
+   }
+
+   #imagem-logo{
+      display: inline-block;
+      width: 80%;
+      margin: 20px;
       justify-content: center;
    }
 
@@ -404,15 +412,19 @@ table.ghibli-table th {
       cursor: text;
    }
 
-   #imagem-logo{
-      display: inline-block;
-      width: 80%;
-      margin: 20px;
-      justify-content: center;
+   .icon{
+      margin: 10px 10px 10px 10px;
    }
 
    .texto-img{
       opacity: 1;
+   }
+
+   .div-wrap:last-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
    }
 
    #rodape{
@@ -426,5 +438,12 @@ table.ghibli-table th {
 
    input[type="submit"]{
       background: url(../icons/fechar.png) center center no-repeat;
+   }
+}
+
+@media only screen and (max-width: 400px){
+   #imagem-logo2{
+      width: 80%;
+      height: auto;
    }
 }
