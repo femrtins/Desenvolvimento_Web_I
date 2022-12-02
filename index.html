@@ -37,7 +37,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
 	<!-- Css e JavaScript -->
-	<link href="css/c.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link href="assets/bootstrap.min.css" rel="stylesheet">
 	<script src="assets/bootstrap.bundle.min.js"></script>
 </head>
@@ -56,8 +56,8 @@
 				<div class="container-out">
 				    <div class="search-container">
 				        <form id="search-engine">
-					        <input id="search" type="text" autocomplete="off" onblur="desfocus()">
-					        <input id="search_submit" type="submit">
+					        <input id="search" type="text" autocomplete="off" onblur="desfocus()" autofocus name="filmes">
+					        <input id="search_submit" type="submit" name="abre ou limpa">
 					        <div id="search-results"></div>
 				        </form>				     
 				        <div id="search-data"></div>
@@ -81,10 +81,10 @@
 		    <!-- Carrosel -->
 		    <div class="carousel-inner">
 
-				<div class="carousel-item active" style="background-image: url('imagens/capa.png');">
+				<div class="carousel-item active" id="carousel-1" style="background-image: url('imagens/capa.png'); cursor: pointer;">
 				</div>
 
-				<div class="carousel-item" style="background-image: url('imagens/ponyo.jpg');">
+				<div class="carousel-item" id="carousel-2" style="background-image: url('imagens/ponyo.jpg');   cursor: pointer;">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Ponyo: Uma Amizade que Veio do Mar</h1>		  
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 
-				<div class="carousel-item" style="background-image: url('imagens/kiki.jpg');">
+				<div class="carousel-item" id="carousel-3" style="background-image: url('imagens/kiki.jpg');   cursor: pointer;">
 					<div class="container">
 						<div class="carousel-caption text-end">
 							<h1>O Serviço de Entregas da Kiki</h1>
@@ -176,63 +176,63 @@
 			        </div>
 
 			        <div class="col">	           
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/ponyo-thumb.webp" alt="Ponyo"></a>  
+		        		<a href="html/ponyo.html"><img class="thumbnail" src="imagens/ponyo-thumb.webp" alt="Ponyo"></a>  
 		        		<label class="texto-img">Ponyo</label>         	
 			        </div>
 
 			        <div class="col">
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/o-castelo-no-ceu.jpg" alt="O Castelo no Céu"></a>  
+		        		<a href="html/o-castelo-no-ceu.html"><img class="thumbnail" src="imagens/o-castelo-no-ceu.jpg" alt="O Castelo no Céu"></a>  
 		        		<label class="texto-img">O Castelo no Céu</label>           	
 			        </div>
 
 			        <div class="col">	
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/sussuros-do-coracao.png" alt="Sussuros do Coração"></a>  
+		        		<a href="html/sussurros-do-coracao.html"><img class="thumbnail" src="imagens/sussuros-do-coracao.png" alt="Sussuros do Coração"></a>  
 		        		<label class="texto-img">Sussurros do Coração</label>       	
 			        </div>
 
 			        <div class="col">	           
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/Princesa-Mononoke.webp" alt="Princesa Mononoke"></a>  
+		        		<a href="html/princesa-mononoke.html"><img class="thumbnail" src="imagens/Princesa-Mononoke.webp" alt="Princesa Mononoke"></a>  
 		        		<label class="texto-img">Princesa Mononoke</label>         	
 			        </div>
 
 			        <div class="col">	 
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/pompoko.jpg" alt="PomPoko"></a>  
-		        		<label class="texto-img">PomPoko</label>
+		        		<a href="html/pompoko.html"><img class="thumbnail" src="imagens/pompoko.jpg" alt="PomPoko"></a>  
+		        		<label class="texto-img">Pom Poko</label>
 		      	
 			        </div>
 
 			        <div class="col">	 
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/porco-rosso.jpg" alt="Porco Rosso"></a>  
+		        		<a href="html/porco-rosso.html"><img class="thumbnail" src="imagens/porco-rosso.jpg" alt="Porco Rosso"></a>  
 		        		<label class="texto-img">Porco Rosso</label>          	
 			        </div>
 
 			        <div class="col">	
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/memorias-de-ontem.jpg" alt="Memórias de Ontem"></a>  
+		        		<a href="html/memorias-de-ontem.html"><img class="thumbnail" src="imagens/memorias-de-ontem.jpg" alt="Memórias de Ontem"></a>  
 		        		<label class="texto-img">Memórias de Ontem</label>           	
 			        </div>
 
 			        <div class="col">	           
-						<a href="pg1.html"><img class="thumbnail" src="imagens/kikis-delivery.jpg" alt="O Serviço de Entregas da Kiki"></a>  
+						<a href="html/o-servico-de-entregas-da-kiki.html"><img class="thumbnail" src="imagens/kikis-delivery.jpg" alt="O Serviço de Entregas da Kiki"></a>  
 		            	<label class="texto-img">O Serviço de Entregas da Kiki</label>
 			        </div>
 
 			        <div class="col">	           
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/Nausicaä-do-Vale-do-Vento.webp" alt="Nausicaä do Vale do Vento"></a>  
+		        		<a href="html/nausicaa-do-vale-do-vento.html"><img class="thumbnail" src="imagens/Nausicaä-do-Vale-do-Vento.webp" alt="Nausicaä do Vale do Vento"></a>  
 		        		<label class="texto-img">Nausicaä do Vale do Vento</label>         	
 			        </div>
 
 			        <div class="col">	
-		        		<a href="pg1.html">	<img class="thumbnail" src="imagens/o-tumulo-dos-vagalumes.png" alt="O Tumulo dos vagalumes"></a>  
+		        		<a href="html/o-tumulo-dos-vagalumes.html">	<img class="thumbnail" src="imagens/o-tumulo-dos-vagalumes.png" alt="O Tumulo dos vagalumes"></a>  
 		        		<label class="texto-img">O Túmulo dos vagalumes</label>
 			        </div>
 
 			        <div class="col">	
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/yamadas.jpg" alt="Meus vizinhos, Os Yamadas"></a>  
+		        		<a href="html/meus-vizinhos.html"><img class="thumbnail" src="imagens/yamadas.jpg" alt="Meus vizinhos, Os Yamadas"></a>  
 		        		<label class="texto-img">Meus vizinhos, Os Yamadas</label>
 			        </div>
 
 			        <div class="col">	
-		        		<a href="pg1.html"><img class="thumbnail" src="imagens/aya-e-a-bruxa.jpg" alt="Aya e a Bruxa"></a>  
+		        		<a href="html/aya-e-a-bruxa.html"><img class="thumbnail" src="imagens/aya-e-a-bruxa.jpg" alt="Aya e a Bruxa"></a>  
 		        		<label class="texto-img">Aya e a Bruxa</label>          	
 			        </div>
 			    </div>
@@ -252,7 +252,6 @@
 	</footer>
 	
 	<script src="js/javascript.js"></script>
-	<script src="js/lista.js"></script>
 </body>
 
 </html>
