@@ -1,0 +1,430 @@
+/*
+ * Principal
+ */
+
+* { 
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+.div-box{   
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+   width: 100%;
+   box-shadow: inset 0 0 60rem rgba(0, 0, 0, 1);  
+}
+
+html, body{
+   height: 100%;
+}
+
+.texto-cover{
+   width: 100%;
+   color: white;
+   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+   text-align: center;
+   padding: 60px;
+   position: absolute;
+   bottom: 0px;
+}
+
+.texto-cover h1{
+   font-family: 'Open Sans', sans-serif; 
+   font-weight: bolder;
+}
+/*
+ * Navegador
+ */
+
+.navbar {
+   padding: 10px;
+}
+
+#imagem-logo{
+   width: 300px;
+}
+
+.container-out {
+   font-family: "VT323", monospace;
+   font-size: 20px;
+   width: 300px;
+   height: 50px;
+}
+
+.search-container {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  padding: 0;
+}
+
+input[type="text"] {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[type="text"]:hover + input[type="submit"]{
+  opacity: 0.4;
+}
+
+
+input[type="text"]:focus {
+   margin-right: 50px;
+   background-color: #ff944e;
+   color: white;
+  width: 80%;  
+  cursor: text;
+}
+
+input[type="submit"] {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background: url(../icons/pesquisa.png) center center no-repeat;
+  transform: scale(0.5);
+  text-indent: 10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  filter: invert(100%);
+
+  transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.4;
+}
+
+input[type="text"]:focus ~ input[type="submit"]{
+      background: url(../icons/fechar.png) center center no-repeat;
+   }
+
+#search-input{
+   outline: none;
+}
+
+#search:focus ~ #search-results{
+   opacity: 1;
+}
+#search-results {
+   position: relative;
+   margin-right: 50px;
+   margin-left: auto;
+   border-radius: 25px;
+   opacity: 0;
+   top: 52px;
+   z-index: 2;
+   background-color: #ff944e;
+   width: 80%;
+   text-align: left;
+   display: none; 
+}
+
+.search-item {
+   border-bottom: solid 1px white;
+   color: white;
+   cursor: pointer;
+}
+
+.search-item:last-child{
+      border-bottom: none;
+}
+
+.search-item p {
+   margin: 0;
+   padding: 10px;
+}
+
+.search-item:hover {
+   color: black;
+   background-color: white;
+}
+.search-item:last-child:hover {
+   border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+.search-item:first-child:hover {
+   border-top-right-radius: 25px;
+   border-top-left-radius: 25px;
+}
+
+#search-data {
+   margin-top: 10px;
+   color: #1ca0b8;
+}
+
+#search-data p {
+   margin: 0;
+   padding: 6px;
+   font-size: 16px;
+}
+
+#alto-contraste{
+   background-color: transparent;
+   height: 50px;
+   padding: 10px;
+}
+
+#div-alto-contraste{
+   display: flex;
+   align-items: center;
+}
+
+#sol-alto-contraste{
+   height: 30px;
+}
+
+#div-container{
+   display: flex;
+   flex-direction: row;
+}
+
+body {
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+/*
+ * Filme
+ */
+
+main {
+  width: 100%;
+  background-color: #FAF9F6;
+}
+
+.filme {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   padding-top: 100px;
+} 
+
+.div-wrap{
+   margin-left: 40px;
+   margin-right: 40px;
+   text-align: justify;
+   width: 500px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-family: 'Open Sans', sans-serif; 
+}
+
+.div-wrap p{
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.div-wrap h3{
+   font-size: 30px;
+   padding-bottom: 10px;
+   font-weight: bold;
+}
+
+.div-wrap2{
+   margin-left: 40px;
+   margin-right: 40px;
+   text-align: justify;
+   width: 1080px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-family: 'Open Sans', sans-serif; 
+}
+
+.div-wrap2 p{
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+.div-wrap2 h3{
+   font-size: 30px;
+   padding-bottom: 10px;
+   font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1060px){
+   .div-wrap2{
+      width: 500px;
+   }
+}
+
+#poster{
+   width: 100%;
+}
+
+
+.icon{
+   margin-right: 20px;
+   width: 100px;
+   border-radius: 20px;
+}
+
+.icon:hover{
+   box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
+}
+
+/*
+ * Tabela
+ */
+
+
+table.ghibli-table {
+   background-color: #0b6687;
+   width: 100%;
+   text-align: left;
+}
+table.ghibli-table td, table.ghibli-table th {
+   border: 1px solid #FFFFFF;
+   padding: 10px 9px;
+   font-size: 16px;
+   color: #FFFFFF;
+}
+table.ghibli-table th {
+  font-weight: bold;
+}
+
+#bandeira{
+   height: 22px;
+}
+
+/*
+ * Rodapé
+ */
+
+#rodape{
+   padding: 0 30px 0 30px;
+   width: 100%;
+   height: 150px;
+   display: flex;
+   align-content: center;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-around;
+   text-align: center;
+}
+
+#texto-rodape{
+   height: 40px;
+   font-size: 16px;
+   font-family: 'VT323', serif;
+   text-align: center;
+   margin: 30px;
+}
+
+#imagem-logo2{
+   height: 30px;
+}
+
+#scroll-up{
+   width: 50px;
+   height: 50px;
+   background-color: #ff944e;
+   align-self: flex-start;
+   position: relative;
+   top: -25px;
+   border-radius: 10px;
+   padding-right: 5px;
+   color: black;
+}
+
+#scroll-up:hover{
+   background-color: black;
+   color: white;
+}
+
+#seta{
+   font-size: 30px;
+   display: inline-block;
+   pointer-events: none;
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+}
+
+/*
+ * Mobile
+ */
+
+@media only screen and (max-width: 600px){
+   .container-fluid{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+   }
+
+   .container-out{
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+   }
+
+   .search-container{
+      width: 90%;
+      margin: auto;
+   }
+
+   #search-engine{
+      margin: 0 auto;
+   }
+
+   input[type="text"]{
+      margin-right: 50px;
+      background-color: #ff944e;
+      color: white;
+      width: 80%;
+      border-bottom: 1px solid #BBB;
+      cursor: text;
+   }
+
+   #imagem-logo{
+      display: inline-block;
+      width: 80%;
+      margin: 20px;
+      justify-content: center;
+   }
+
+   .texto-img{
+      opacity: 1;
+   }
+
+   #rodape{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   #scroll-up{
+      align-self: auto;
+   }
+
+   input[type="submit"]{
+      background: url(../icons/fechar.png) center center no-repeat;
+   }
+}
