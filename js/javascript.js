@@ -80,7 +80,9 @@ element("search").oninput = function() {
 
 function desfocus() {
     document.getElementById("search").value = "";
+    document.getElementById("search").placeholder = "";
 }
+
 
 document.querySelector('#carousel-1').addEventListener('click', () => {
   window.open("html/sobre.html","_self")
