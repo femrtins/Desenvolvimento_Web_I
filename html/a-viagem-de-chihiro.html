@@ -37,7 +37,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
 	<!-- Css e JavaScript -->
-	<link href="../css/filmes.css" rel="stylesheet">
+	<link href="../css/style-filmes.css" rel="stylesheet">
 	<link href="../assets/bootstrap.min.css" rel="stylesheet">
 	<script src="../assets/bootstrap.bundle.min.js"></script>
 
@@ -63,8 +63,8 @@
 					<div class="container-out">
 					    <div class="search-container">
 					        <form id="search-engine">
-						        <input id="search" type="text" onblur="desfocus()" autocomplete="off">
-						        <input id="search_submit" type="submit">
+						        <input id="search" type="text" autocomplete="off" onblur="desfocus()" autofocus name="filmes">
+						        <input id="search_submit" type="submit" name="abre ou limpa">
 						        <div id="search-results"></div>
 					        </form>				     
 					        <div id="search-data"></div>
@@ -172,7 +172,7 @@
 
 			<div class="div-wrap">
 				<h3>Trilha Sonora</h3>
-				<iframe style="border-radius:12px; width: 100%; height: 380px;" src="https://open.spotify.com/embed/album/766a5fKJYFy9ii4Kz2bQy9?utm_source=generator"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<iframe style="border-radius:12px; width: 100%; height: 380px;" title="Playlist da Trilha Sonora no Spotify" src="https://open.spotify.com/embed/album/766a5fKJYFy9ii4Kz2bQy9?utm_source=generator"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 			</div>
 
 			<div class="div-wrap">
@@ -194,7 +194,4 @@
 	</footer>
 
 	<script src="../js/javascript.js"></script>
-	<script src="../js/lista.js"></script>
-</body>
 </html> 
-
