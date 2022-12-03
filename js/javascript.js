@@ -104,18 +104,27 @@ element("search").oninput = function() {
 function desfocus() {
     document.getElementById("search").value = "";
     document.getElementById("search").placeholder = "";
-    element("search-results").style.display = "none";
+    $(document).mouseup(function(e) 
+    {
+        var container = $("#search-results");
+
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            container.hide();
+        }
+    });
 }
 
+if (document.title == "Susuwatari") {
+    document.querySelector('#carousel-1').addEventListener('click', () => {
+        window.open("html/sobre.html", "_self")
+    })
 
-document.querySelector('#carousel-1').addEventListener('click', () => {
-    window.open("html/sobre.html", "_self")
-})
+    document.querySelector('#carousel-2').addEventListener('click', () => {
+        window.open("html/ponyo.html", "_self")
+    })
 
-document.querySelector('#carousel-2').addEventListener('click', () => {
-    window.open("html/ponyo.html", "_self")
-})
-
-document.querySelector('#carousel-3').addEventListener('click', () => {
-    window.open("html/o-servico-de-entregas-da-kiki.html", "_self");
-})
+    document.querySelector('#carousel-3').addEventListener('click', () => {
+        window.open("html/o-servico-de-entregas-da-kiki.html", "_self");
+    })
+}
