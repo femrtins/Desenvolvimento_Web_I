@@ -1,0 +1,164 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title O Mundo dos Pequeninos
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-8.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 O Mundo dos Pequeninos
+          %h2{lang: "ja"} 借りぐらしのアリエッティ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme O Mundo dos Pequeninos", src: "../posters/poster-8.jpg"}/
+          %br/
+          %br/
+          %p O Mundo dos Pequeninos é um filme de animação japonês de 2010, sendo a estreia de Hiromasa Yonebayashi na direção. Foi baseado no romance Os Pequeninos Borrowers, de Mary Norton, com roteiro de Hayao Miyazaki e Keiko Niwa e produção do Studio Ghibli.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 95 min
+              %tr
+                %th Direção
+                %td Hiromasa Yonebayashi
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td
+                  Hayao Miyazaki
+                  %br>/
+                  Keiko Niwa
+              %tr
+                %th Elenco
+                %td
+                  Mirai Shida
+                  %br>/
+                  Ryunosuke Kamiki
+                  %br>/
+                  Shinobu Otake
+                  %br>/
+                  Keiko Takeshita
+                  %br>/
+                  Tatsuya Fujiwara
+                  %br>/
+                  Tomokazu Miura
+                  %br>/
+                  Kirin Kiki
+              %tr
+                %th Baseado
+                %td
+                  Os Pequeninos Borrowers
+                  %br>/
+                  de Mary Norton
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Cécile Corbel
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Edição
+                %td Rie Matsubara
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 17 de julho de 2010
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td US$23 milhões
+              %tr
+                %th Receita
+                %td US$146 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Nos subúrbios de Tóquio, sob o assoalho de uma casa velha, Arrietty vive em seu minúsculo mundo com a família, fazendo de tudo para manter em segredo a existência de todos. Sobrevivendo como pequenos ladrões, eles conhecem as regras para que nunca sejam percebidos pelos verdadeiros – e grandes – donos da casa. Para isso, procuram manter a desconfiança deles em cima dos gatos e ratos e tomam todos os cuidados possíveis para evitar de serem vistos. Contudo, quando um jovem rapaz se hospeda na casa, a pequenina Arrietty acredita que poderá manter uma amizade com ele, apesar da diferença de tamanhos.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Em 16 de dezembro de 2009, o Studio Ghibli anunciou O Mundo dos Pequeninos como seu filme para o próximo ano. Este filme é baseado no romance Os Pequeninos Borrowers, da escritora britânica Mary Norton. O romance ganhou a Medalha Carnegie pela literatura infantil em 1953 e já havia sido adaptado em dois filmes e uma série de TV na época. Os fundadores do Studio Ghibli, Isao Takahata e Hayao Miyazaki, estavam contemplando uma adaptação deste romance há cerca de 40 anos.
+          %p No mesmo dia, foi anunciado Hiromasa Yonebayashi como diretor do filme e Hayao Miyazaki como planejador. Yonebayashi trabalhou em algumas das obras do Studio Ghibli, como O Castelo Animado, Ponyo e A Viagem de Chihiro. Ele também foi o diretor reserva de Contos de Terramar.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/0ldESLoQyyP80ynVU2gych?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70216227"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/arriettys-hemmelige-verden/umc.cmc.4krkqhs0xk33vof1g7w1v3i5n?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

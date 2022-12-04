@@ -1,0 +1,159 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Sussurros do Coração
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-14.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Sussurros do Coração
+          %h2{lang: "ja"} 耳をすませば
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Sussurros do Coração", src: "../posters/poster-14.png"}/
+          %br/
+          %br/
+          %p Sussurros do Coração é um filme de animação japonês de 1995, dirigido por Yoshifumi Kondo e com roteiro de Hayao Miyazaki, baseado no mangá Mimi wo Sumaseba de 1989 de Aoi Hiiragi. O filme posteriormente inspirou parte da história do longa de 2002 do Studio Ghibli, O Reino dos Gatos, que traz personagens como Barão e Muta.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 111 min
+              %tr
+                %th Direção
+                %td Yoshifumi Kondo
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Yoko Honna
+                  %br>/
+                  Issei Takahashi
+                  %br>/
+                  Takashi Tachibana
+                  %br>/
+                  Shigeru Muroi
+                  %br>/
+                  Shigeru Tsuyuguchi
+                  %br>/
+                  Keiju Kobayashi
+              %tr
+                %th Gênero
+                %td Drama
+              %tr
+                %th Música
+                %td Yuji Nomi
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Baseado
+                %td
+                  Mimi o Sumaseba
+                  %br>/
+                  de Aoi Hiiragi
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Brasil", src: "../icons/bandeira-brasil.png"}/
+                %td 15 de julho de 1995
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Receita
+                %td ¥3.15 bilhões (Japão)
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Shizuku é uma estudante que sonha em ser uma escritora e decide, durante o verão, ler vinte livros. Mas, curiosamente, todas as edições que ela pegou na biblioteca já haviam sido lidas por um tal de Seiji Amasawa.
+          %p Nos dias seguintes, Shizuku encontra um jovem, mais tarde revelado ser Seiji, que a irrita para provocá-la sobre a música que ela compôs para o clube de literatura o qual faz parte na escola: "Concrete Roads". Ao encontrar um gato andando de trem, Shizuku o segue para descobrir uma loja de antiguidades administrada por Shiro Nishi. Na loja há uma estatueta de gato apelidada de "O Barão". Shizuku está em êxtase por encontrar "um lugar onde as histórias começam" e pergunta a Nishi se ela pode voltar.
+        .div-wrap
+          %h3#Critica Produção &amp; Música
+          %p Durante a produção, os cenários das sequências de fantasia do filme foram desenhados por Naohisa Inoue, que posteriormente fez um curta-metragem para o Studio Ghibli intitulado Iblard Jikan, e a xilogravura do violinista preso foi criada pelo filho de Miyazaki, Keisuke Miyazaki, um escultor profissional.
+          %p A história e os cenários do filme foram baseados em uma locação real que se dá em torno da estação Seiseki-Sakuragaoka na cidade de Tama, Tóquio.
+          %p A música em Sussurros do Coração é um dos pontos mais marcantes do filme. A trilha sonora foi composta por Yuji Nomi. Em alguns momentos, durante o filme, Shizuku traduz a música de John Denver “Take Me Home, Country Roads” para japonês para o clube de coro de sua escola.
+          %p Ela escreve sua própria versão humorística da música japonesa, chamada “Concrete Road”, sobre sua cidade natal no oeste de Tóquio. As músicas foram realmente traduzidas pela filha do produtor Toshio Suzuki, Mamiko, com Hayao Miyazaki escrevendo letras complementares. Essas músicas desempenham um papel chave na história.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/0yOhYn348rz2j3mUne0fpH?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70045021"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/szept-serca/umc.cmc.36pa34qc4qalm30euvvnelzi6?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

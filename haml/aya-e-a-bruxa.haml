@@ -1,0 +1,127 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Aya e a Bruxa
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-23.webp");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Aya e a Bruxa
+          %h2{lang: "ja"} 風立ちぬ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Aya e a Bruxa", src: "../posters/poster-23.jpg"}/
+          %br/
+          %br/
+          %p Aya e a Bruxa é o mais recente filme de animação produzido pelo Studio Ghibli dirigido por Goro Miyazaki. Baseado no livro Tesourinha e a Bruxa de Diana Wynne Jones, sua estreia aconteceu no dia 30 de dezembro de 2020 no canal japonês NHK.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 82 min
+              %tr
+                %th Direção
+                %td Goro Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Planejamento
+                %td Hayao Miyazaki
+              %tr
+                %th Baseado
+                %td
+                  Tesourinha e a Bruxa
+                  %br>/
+                  de Diana Wynne Jones
+              %tr
+                %th Gênero
+                %td Aventura
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 30 de dezembro de 2020
+              %tr
+                %th Idioma
+                %td Japonês
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p O filme trata de Aya, uma jovem que vive num orfanato e gosta da sua vida, mas quando é adotada por uma bruxa e levada para uma casa assombrada, as coisas mudam. No entanto, a jovem não se deixará assustar e fará o melhor que puder para controlar a situação.
+        .div-wrap
+          %h3#Critica Produção
+          %p O filme foi anunciado como o primeiro filme ghibli inteiramente em 3DCG (computação gráfica em 3D). O filme estava programado para estrear no Festival de Cannes de 2020 antes do cancelamento do evento devido ao COVID-19. Teve sua estreia pela emissora japonesa NHK em dezembro de 2020.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/4rWoWOTHETCJ7Y2ywRm7L2?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/81316559"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

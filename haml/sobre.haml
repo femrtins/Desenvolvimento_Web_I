@@ -1,0 +1,117 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Sobre
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../imagens/capa.png");
+      }
+      a{
+      	text-decoration: none;
+      	color: white;
+      }
+      a:hover{
+      	color: white;
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Studio Ghibli FanPage
+    %main
+      .filme
+        .div-wrap
+          %h3 Studio Ghibli
+          %p O Studio Ghibli é um estúdio de animação japonês, sediado em Koganei, Tóquio. Fundado em 1985, o estúdio já produziu 23 longas de animação, sendo o primeiro O Castelo no Céu (1986) e o mais recente Aya e a Bruxa (2022).
+          %p O Studio Ghibli foi fundado em 1985 por Hayao Miyazaki, Isao Takahata, Toshio Suzuki e Yasuyoshi Tokuma, logo após o sucesso de Nausicaä do Vale do Vento, no ano anterior. O estúdio lançou seu primeiro filme, O Castelo no Céu, no ano seguinte. O logotipo da empresa é o Totoro, o personagem do filme Meu Amigo Totoro, lançado em 1988. Com exceção de seis produções, todos os filmes do estúdio foram dirigidos por Hayao Miyazaki e Isao Takahata. Toshio Suzuki, por sua vez, é o produtor da maioria deles. Em 2001, o Museu Ghibli, um museu dedicado as obras do estúdio, foi inaugurado.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Fundação
+                %td 15 de junho de 1985
+              %tr
+                %th Fundadores
+                %td
+                  Isao Takahata
+                  %br>/
+                  Hayao Miyazaki
+                  %br>/
+                  Toshio Suzuki
+                  %br>/
+                  Yasuyoshi Tokuma
+              %tr
+                %th Sede
+                %td Koganei, Tóquio, Japão.
+              %tr
+                %th Presidente
+                %td Kiyofumi Nakajima
+              %tr
+                %th Site oficial
+                %td
+                  %a{href: "https://www.ghibli.jp/"} ghibli.jp
+        .div-wrap2
+          %h3#sinopse História
+          %p “O Quente Vento do Deserto do Saara”. Para muitos, essa frase pode não fazer sentido algum, mas para Hayao Miyazaki, esse vento que se chama Ghibli seria aquele mudaria para sempre a história da animação mundial.
+          %p Graças ao sucesso alcançado por Nausicaä do Vale do Vento em 1984, no ano seguinte, em 1985, nascia o Studio Ghibli. Sua história, porém, começa 30 anos antes com o encontro de Hayao Miyazaki e Isao Takahata, futuros pais do estúdio.
+          %p Em 1974 os dois se encontravam durante a produção de um anime de grande sucesso no mundo inteiro – inclusive no Brasil – Heidi. Enquanto Isao Takahata dirigia as séries, Hayao Miyazaki fazia um trabalho sobre-humano para conseguir desenhar o layout de cada episódio detalhadamente.
+          %p Isso fez com que os dois percebessem que para fazer as animações de alta qualidade, como desejavam, precisariam de um tipo de mídia onde os prazos não fossem tão apertados como são nas séries de televisão. Foi assim que surgiu a ideia da criação de um estúdio para produzir filmes cuidadosamente desenhados, com enredo e qualidade impecáveis, e o mais importante, de seu próprio jeito.
+          %br/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

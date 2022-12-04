@@ -1,0 +1,151 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Memórias de Ontem
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-18.webp");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Memórias de Ontem
+          %h2{lang: "ja"} おもひでぽろぽろ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Memórias de Ontem", src: "../posters/poster-18.jpg"}/
+          %br/
+          %br/
+          %p Memórias de Ontem é um filme de animação japonesa de 1991 escrito e dirigido por Isao Takahata, baseado no mangá de 1982 do mesmo nome por Hotaru Okamoto e Yuko Tone. Foi animado pelo Studio Ghibli para Tokuma Shoten, Nippon Television Network e Hakuhodo, e distribuído pela Toho.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 118 min
+              %tr
+                %th Direção
+                %td Isao Takahata
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Isao Takahata
+              %tr
+                %th Elenco
+                %td
+                  Miki Imai
+                  %br>/
+                  Toshiro Yanagiba
+                  %br>/
+                  Yoko Honna
+              %tr
+                %th Baseado
+                %td
+                  Omoide Poro Poro
+                  %br>/
+                  by Hotaru Okamoto
+                  %br>/
+                  Yuko Tone
+              %tr
+                %th Música
+                %td Katz Hoshi
+              %tr
+                %th Cinematografia
+                %td Hisao Shirai
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 20 de julho de 1991
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Receita
+                %td ¥3.18 bilhões (Japão)
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Taeko é uma mulher solteira de 27 anos que se dedica apenas ao trabalho. Ela sai de sua nativa Tóquio pela primeira vez e viaja a Yamagata para visitar a família da irmã durante a colheita anual de açafrão-bastardo. Ao longo da viagem, ela começa a questionar se sua vida estressante é o que desejava quando jovem.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Memórias de Ontem explora um gênero tradicionalmente considerado fora do campo dos assuntos animados: um drama realista escrito para adultos, principalmente mulheres. O filme foi surpreendentemente um sucesso de bilheteria, atraindo um grande público adulto e se tornando o filme japonês de maior bilheteria de 1991 no país. Também foi bem recebido pelos críticos, com uma classificação de 100% no Rotten Tomatoes.
+          %p A história se passa no distrito de Takase, na cidade de Yamagata, na província de Yamagata, com destaque para a Estação Takase. Embora esta tenha sido reconstruída, o cenário permanece praticamente inalterado. Durante o curso do filme, os personagens visitam locais importantes, incluindo o destino do resort de Mount Zao.
+          %p Diferentemente do estilo típico de animação de personagens japoneses, os personagens têm músculos e expressões faciais mais realistas devido ao diálogo ter sido gravado primeiro (a tradição no Japão é gravá-lo após a conclusão da animação) e os animadores ajustam a animação ao diálogo falado. No entanto, as cenas do passado de infância de Taeko foram animadas antes da gravação das vozes, dando um contraste sutil entre o estilo de anime de sua infância e a “realidade” adulta do enquadramento da história.
+          %p As cenas ambientadas em 1966 de Taeko com 10 anos, foram tiradas do material original que inspirou o filme. Takahata teve dificuldade em adaptar o mangá episódico em um longa-metragem e, portanto, ele inventou a narrativa de enquadramento em que a Taeko adulta viaja para o campo e conhece Toshio.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/3TSh2VevYJEb5wfrnyHMVM?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/80092922"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/memorias-de-ontem/umc.cmc.nou0dn47d0dzh45gr2kvw4ld?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

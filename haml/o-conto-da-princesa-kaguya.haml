@@ -1,0 +1,162 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title O Conto da Princesa Kaguya
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-4.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 O Conto da Princesa Kaguya
+          %h2{lang: "ja"} かぐや姫の物語
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme O Conto da Princesa Kaguya", src: "../posters/poster-4.jpg"}/
+          %br/
+          %br/
+          %p O Conto da Princesa Kaguya (Kaguya-hime no Monogatari) é  um filme japonês de animação, drama e fantasia lançado em 2013. Baseado a partir da clássica fábula japonesa, o Cortador de Bambu do século X. O enredo do longa-metragem começa quando a personagem principal, Kaguya é encontrada ainda bebê dentro de um tronco de bambu.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 137 min
+              %tr
+                %th Direção
+                %td Isao Takahata
+              %tr
+                %th Produção
+                %td
+                  Yoshiaki Nishimura
+                  %br>/
+                  Seiichiro Ujiie
+              %tr
+                %th Roteiro
+                %td
+                  Isao Takahata
+                  %br>/
+                  Riko Sakaguchi
+              %tr
+                %th Elenco
+                %td
+                  Aki Asakura
+                  %br>/
+                  Kengo Kora
+                  %br>/
+                  Takeo Chii
+                  %br>/
+                  Nobuko Miyamoto
+              %tr
+                %th Gênero
+                %td
+                  Fantasia
+                  %br>/
+                  Drama
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Keisuke Nakamura
+              %tr
+                %th Direção de arte
+                %td Kazuo Oga
+              %tr
+                %th Edição
+                %td Toshihiko Kojima
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Brasil", src: "../icons/bandeira-brasil.png"}/
+                %td 16 de julho de 2015
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥5 bilhões
+              %tr
+                %th Receita
+                %td US$24,3 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Em mais um dia de trabalho como todos os outros, um simples camponês encontra em um talo de bambu uma pequena menina. Encantado com o que viu, decide a levar para sua casa e criá-la junto a sua esposa, a quem colocam o nome de Kaguya. E ao passar dos anos, ela se torna uma bela jovem e passa a ser o interesse amoroso de vários homens, incluindo de cinco nobres a quem recusa vários pedidos de casamento e pede inúmeros presentes quase impossíveis. Além disso, Kaguya chama a atenção do próprio imperador e ao se dar conta de seu interesse foge angustiada.
+          %p Quando criança, Isao Takahata leu O Conto do Cortador de Bambu. Ele lembrou que lutava para se relacionar e simpatizar com a protagonista; para ele, a “transformação da heroína foi enigmática” e que “não provocou nenhuma empatia dele”. Em 1960, Takahata estava se preparando para uma possível adaptação do conto quando trabalhava na Toei Animation, que acabou sendo abandonada. Depois de reler o conto, ele percebeu que a história tinha o potencial de ser interessante, desde que uma adaptação permitisse ao público entender como a princesa Kaguya se sentia.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Foi inicialmente anunciado para ser lançado simultaneamente com Vidas ao Vento, outro filme Ghibli de Hayao Miyazaki, no verão de 2013, no Japão. Esse feito teria marcado a primeira vez que os trabalhos dos dois diretores seriam lançados juntos desde Meu Amigo Totoro e Túmulo dos Vagalumes, ambos de 1988. No entanto, em fevereiro de 2013, a distribuidora Toho anunciou que o lançamento de ‘Princesa Kaguya’ seria adiado para o outono de 2013, alegando preocupações de que os storyboards ainda não estivessem concluídos.
+          %p Entre os anos de 2014 e 2016, O Conto da Princesa Kaguya foi indicado para várias premiações nacionais e internacionais, e das vinte e cinco indicações conquistou sete vitórias. Recebeu indicação de Oscar de Melhor Animação, vencendo algumas outras ao redor do mundo, como o 68º Mainichi Film Awards, 36º Festival de Cinema de Mill Valley, 35º Prêmio Sociedade de Críticos de Cinema de Boston, o 40º Prêmio Los Angeles Film Critics Association, entre outras.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/0RkkwrIWDzsYSw11lmhNYx?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/80013552"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/fortllingen-om-prinsesse-kaguya/umc.cmc.1c9r7skqwjgu2vvdpfdscaq8b?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

@@ -1,0 +1,143 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Meu Amigo Totoro
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-2.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Meu Amigo Totoro
+          %h2{lang: "ja"} となりのトトロ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Meu Amigo Totoro", src: "../posters/poster-2.jpg"}/
+          %br/
+          %br/
+          %p Meu Amigo Totoro é um filme animado de fantasia escrito e dirigido por Hayao Miyazaki e produzido pelo Studio Ghibli em 1988. O filme conta a historia das duas jovens filhas (Satsuki e Mei) de um professor e suas aventuras com espíritos da floresta amigáveis no Japão pós-guerra rural.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 86 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toru Hara
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Chika Sakamoto
+                  %br>/
+                  Noriko Hidaka
+                  %br>/
+                  Hitoshi Takagi
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Hisao Shirai
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 16 de abril de 1988
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Receita
+                %td US$45,1 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Duas meninas se mudam com o pai para o interior do Japão, com o objetivo de ficar perto da mãe, que está internada em um hospital. Lá, elas viverão muitas aventuras ao lado de um simpático espírito protetor da floresta chamado Totoro, que vive em uma canforeira gigante.
+        .div-wrap
+          %h3#Critica Produção
+          %p Depois de escrever e produzir O Castelo no Céu (1986), Hayao Miyazaki começou a dirigir Meu Amigo Totoro para o Studio Ghibli. A produção de Miyazaki acompanhou a produção de Túmulo dos Vagalumes, de seu colega Isao Takahata. O filme de Miyazaki foi financiado pelo produtor executivo Yasuyoshi Tokuma. Ambos foram lançados simultâneamente em 1988. O lançamento em conjunto foi considerado “uma das duplas em cartaz mais emocionantes e notáveis já oferecidas ao público do cinema. ”
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/playlist/3St6kkDwklVEqJIbhyLggf?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/60032294"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/moj-sasiad-totoro/umc.cmc.4j11jg8g8n6tei5d7cupfy40k?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

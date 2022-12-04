@@ -1,0 +1,161 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Contos de Terramar
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-11.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Contos de Terramar
+          %h2{lang: "ja"} ゲド戦記
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Contos de Terramar", src: "../posters/poster-11.jpg"}/
+          %br/
+          %br/
+          %p O Contos de Terramar é um filme japonês de animação dirigido por Goro Miyazaki e produzido pelo Studio Ghibli em 2006. O filme foi baseado nos quatro primeiros livros da franquia Terramar, escritos pela autora Ursula K. Le Guin, que são: O Feiticeiro de Terramar, As Tumbas de Atuan, A Praia Mais Longínqua e Tehanu: o Nome da Estrela. O título do filme surgiu da coleção de histórias curtas, Tales from Earthsea, publicada em 2001.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 115 min
+              %tr
+                %th Direção
+                %td Goro Miyazaki
+              %tr
+                %th Produção
+                %td
+                  Toshio Suzuki
+                  %br>/
+                  Tomohiko Ishii
+              %tr
+                %th Roteiro
+                %td
+                  Goro Miyazaki
+                  %br>/
+                  Keiko Niwa
+              %tr
+                %th Elenco
+                %td
+                  Bunta Sugawara
+                  %br>/
+                  Junichi Okada
+                  %br>/
+                  Aoi Teshima
+                  %br>/
+                  Yuko Tanaka
+              %tr
+                %th Baseado
+                %td{lang: "ja"}
+                  Série Terramar, de
+                  %br>/
+                  Ursula K. Le Guin
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Tamiya Terashima
+              %tr
+                %th Cinematografia
+                %td
+                  Hidenori Shibahara
+                  %br>/
+                  Atsushi Tamura
+                  %br>/
+                  Junji Yabuta
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 29 de julho de 2006
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Receita
+                %td US$68,7 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Algo estranho caminha sobre a terra. O reino está se deteriorando. Pessoas estão começando a agir diferente e a ver dragões, que não deveriam entrar no mundo dos humanos. Diante desses estranhos eventos, Ged, um poderoso arquimago, está investigando a causa. Durante sua jornada, ele conhece o Príncipe Arren, um adolescente perturbado. Enquanto Arren parece apenas um garoto tímido, ele tem um grave lado negro, que lhe concede força, um ódio implacável e que não tem misericórdia, principalmente quando se trata de proteger Theru, uma garota órfã. Para os oportunistas essa é uma ocasião perfeita, e o bruxo Cob decide usar Theru como isca contra Arren, e somente Ged poderá ajudá-lo a superar seus medos e salvar Theru.
+        .div-wrap
+          %h3#Critica Produção
+          %p Este filme do Studio Ghibli foi a primeira adaptação em anime da franquia Terramar. No passado, muitos diretores, incluindo Hayao Miyazaki, tinham tentado adaptar o Ciclo de Terramar para o cinema, mas foram reprovados pela própria autora. Quando Le Guin ouviu pela primeira vez sobre o interesse de Miyazaki em adaptar seu trabalho, ela não tinha visto nenhum de seus filmes e associava animação com as produções da Disney, e acabou recusando seu pedido.
+          %p Em 2003, depois de ganhar um Oscar pelo filme A Viagem de Chihiro, Hayao Miyazaki recebeu a aprovação de Le Guin, mas estava ocupado dirigindo O Castelo Animado. Toshio Suzuki decidiu que o filho de Hayao, Goro Miyazaki, que estava aconselhando sobre o filme, devia ser o diretor, mesmo nunca tendo ocupado esse cargo anteriormente. Hayao estava insatisfeito com a decisão, achando que Goro não tinha a experiência necessária. Eles supostamente não falavam um com o outro durante a produção do filme, no entanto Hayao reconheceu o trabalho de seu filho após a sua primeira prévia.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/66P1f9J3PbfNKk0YXHYMyf?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70142821"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

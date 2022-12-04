@@ -1,0 +1,161 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title As Memórias de Marnie
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-6.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 As Memórias de Marnie
+          %h2{lang: "ja"} 思い出のマーニー
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme As Memórias de Marnie", src: "../posters/poster-6.jpg"}/
+          %br/
+          %br/
+          %p As Memórias de Marnie é um filme japonês de animação escrito e dirigido por Hiromasa Yonebayashi, produzido pelo Studio Ghibli em 2014.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 103 min
+              %tr
+                %th Direção
+                %td Hiromasa Yonebayashi
+              %tr
+                %th Produção
+                %td
+                  Yoshiaki Nishimura
+                  %br>/
+                  Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td
+                  Keiko Niwa
+                  %br>/
+                  Masashi Ando
+                  %br>/
+                  Hiromasa Yonebayashi
+              %tr
+                %th Elenco
+                %td
+                  Sara Takatsuki
+                  %br>/
+                  Kasumi Arimura
+              %tr
+                %th Baseado
+                %td
+                  When Marnie Was There
+                  %br>/
+                  de Joan G. Robinson
+              %tr
+                %th Música
+                %td Takatsugu Muramatsu
+              %tr
+                %th Cinematografia
+                %td
+                  Junji Yabuta
+                  %br>/
+                  Atsushi/Jun Tamura
+                  %br>/
+                  Hidenori Shibahara
+              %tr
+                %th Edição
+                %td Rie Matsubara
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Brasil", src: "../icons/bandeira-brasil.png"}/
+                %td 19 de novembro de 2015
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥1,15 bilhões
+              %tr
+                %th Receita
+                %td ¥3,63 bilhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Anna é uma menina tímida e doce de 12 anos que só consegue se expressar através dos seus desenhos. Por conta de seus ataques de asma, ela é enviada para passar um tempo com os tios que moram no campo, para poder respirar ar puro. Durante seus passeios pela cidade, ela conhece uma menina loira de cabelos longos chamada Marnie, com quem faz uma amizade instantaneamente. As duas tornam-se melhores amigas e passam a dividir segredos e passatempos. Mas Anna vai descobrindo aos poucos que Marnie não é bem quem ela aparenta ser e ela começa a investigar o mistério que cerca a nova amiga.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p As Memórias de Marnie recebeu uma indicação ao Oscar de 2016 na categoria de Melhor Animação. Esta é a segunda animação do Studio Ghibli a ser dirigida por Hiromasa Yonebayashi. A primeira foi O Mundo dos Pequeninos.
+          %p As Memórias de Marnie recebeu críticas positivas dos especialistas, que elogiaram sua animação, música, performances vocais e história. Chegou aos cinemas do Japão em 19 de julho de 2014, e em Blu-ray e DVD em 18 de março de 2015. O filme recebeu uma indicação ao Oscar de Melhor Animação.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/5xCqg7ej0eaCdjJoDrWUrO?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/80036398"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/el-recuerdo-de-marnie/umc.cmc.78u02xqphrnq7adthacn4z9t?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

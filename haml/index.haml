@@ -1,0 +1,186 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Susuwatari
+    / Icone
+    %link{href: "icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "css/style.css", rel: "stylesheet"}/
+    %link{href: "assets/bootstrap.min.css", rel: "stylesheet"}/
+  %body
+    %header
+      / Navegador
+      %nav.navbar{"aria-label" => "barra de navegação"}
+        .container-fluid
+          / Logo
+          %a#logo{href: "index.html"}
+            %img#imagem-logo{alt: "susuwatari", src: "icons/logo1.png"}/
+          / Pesquisa
+          .container-out
+            .search-container
+              %form#search-engine
+                %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                %input#search_submit{name: "abre ou limpa", type: "button"}/
+                #search-results
+              #search-data
+    %main
+      / Seção Principal
+      #myCarousel.carousel.slide{"data-bs-ride" => "carousel"}
+        / Botões setas
+        .carousel-indicators
+          %button.active{"aria-current" => "true", "aria-label" => "Slide 1", "data-bs-slide-to" => "0", "data-bs-target" => "#myCarousel", type: "button"}
+          %button{"aria-label" => "Slide 2", "data-bs-slide-to" => "1", "data-bs-target" => "#myCarousel", type: "button"}
+          %button{"aria-label" => "Slide 3", "data-bs-slide-to" => "2", "data-bs-target" => "#myCarousel", type: "button"}
+        / Carrosel
+        .carousel-inner
+          #carousel-1.carousel-item.active{style: "background-image: url('imagens/capa.png'); cursor: pointer;"}
+          #carousel-2.carousel-item{style: "background-image: url('imagens/ponyo.jpg');   cursor: pointer;"}
+            .container
+              .carousel-caption
+                %h1 Ponyo: Uma Amizade que Veio do Mar
+                %p{lang: "ja"} 崖の上のポニョ
+          #carousel-3.carousel-item{style: "background-image: url('imagens/kiki.jpg');   cursor: pointer;"}
+            .container
+              .carousel-caption.text-end
+                %h1 O Serviço de Entregas da Kiki
+                %p{lang: "ja"} 魔女の宅急便
+        %button.carousel-control-prev{"data-bs-slide" => "prev", "data-bs-target" => "#myCarousel", type: "button"}
+          %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+          %span.visually-hidden Anterior
+        %button.carousel-control-next{"data-bs-slide" => "next", "data-bs-target" => "#myCarousel", type: "button"}
+          %span.carousel-control-next-icon{"aria-hidden" => "true"}
+          %span.visually-hidden Próximo
+      / Album
+      .album.py-5.bg-light
+        .container
+          .row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3
+            .col
+              %a{href: "html/a-viagem-de-chihiro.html"}
+                %img.thumbnail{alt: "A Viagem de Chiriro", src: "imagens/chiriro.png"}/
+              %label.texto-img A Viagem de Chihiro
+            .col
+              %a{href: "html/vidas-ao-vento.html"}
+                %img.thumbnail{alt: "Vidas ao Vento", src: "imagens/vidas-ao-vento.jpg"}/
+              %label.texto-img Vidas ao Vento
+            .col
+              %a{href: "html/o-conto-da-princesa-kaguya.html"}
+                %img.thumbnail{alt: "O Conto da Princesa Kaguya", src: "imagens/princesa-kaguya.webp"}/
+              %label.texto-img O Conto da Princesa Kaguya
+            .col
+              %a{href: "html/da-colina-kokuriko.html"}
+                %img.thumbnail{alt: "Da Colina Kokuriko", src: "imagens/kokuriko.webp"}/
+              %label.texto-img Da Colina Kokuriko
+            .col
+              %a{href: "html/as-memorias-de-marnie.html"}
+                %img.thumbnail{alt: "As Memórias de Marnie", src: "imagens/marnie.jpg"}/
+              %label.texto-img As Memórias de Marnie
+            .col
+              %a{href: "html/meu-amigo-totoro.html"}
+                %img.thumbnail{alt: "Meu Amigo Totoro", src: "imagens/totoro.jpg"}/
+              %label.texto-img Meu Amigo Totoro
+            .col
+              %a{href: "html/o-castelo-animado.html"}
+                %img.thumbnail{alt: "O Castelo Animado", src: "imagens/O-Castelo-Animado.webp"}/
+              %label.texto-img O Castelo Animado
+            .col
+              %a{href: "html/o-mundo-dos-pequeninos.html"}
+                %img.thumbnail{alt: "O Mundo dos Pequeninos", src: "imagens/O-Mundo-dos-Pequeninos.jpg"}/
+              %label.texto-img O Mundo dos Pequeninos
+            .col
+              %a{href: "html/eu-posso-ouvir-o-oceano.html"}
+                %img.thumbnail{alt: "Eu Posso Ouvir o Oceano", src: "imagens/ocean-waves.jpeg"}/
+              %label.texto-img Eu Posso Ouvir o Oceano
+            .col
+              %a{href: "html/o-reino-dos-gatos.html"}
+                %img.thumbnail{alt: "O Reino dos Gatos", src: "imagens/o-reino-dos-gatos.png"}/
+              %label.texto-img O Reino dos Gatos
+            .col
+              %a{href: "html/contos-de-terramar.html"}
+                %img.thumbnail{alt: "Contos de Terramar", src: "imagens/contos-de-terramar.png"}/
+              %label.texto-img Contos de Terramar
+            .col
+              %a{href: "html/ponyo.html"}
+                %img.thumbnail{alt: "Ponyo", src: "imagens/ponyo-thumb.webp"}/
+              %label.texto-img Ponyo
+            .col
+              %a{href: "html/o-castelo-no-ceu.html"}
+                %img.thumbnail{alt: "O Castelo no Céu", src: "imagens/o-castelo-no-ceu.jpg"}/
+              %label.texto-img O Castelo no Céu
+            .col
+              %a{href: "html/sussurros-do-coracao.html"}
+                %img.thumbnail{alt: "Sussuros do Coração", src: "imagens/sussuros-do-coracao.png"}/
+              %label.texto-img Sussurros do Coração
+            .col
+              %a{href: "html/princesa-mononoke.html"}
+                %img.thumbnail{alt: "Princesa Mononoke", src: "imagens/Princesa-Mononoke.webp"}/
+              %label.texto-img Princesa Mononoke
+            .col
+              %a{href: "html/pompoko.html"}
+                %img.thumbnail{alt: "PomPoko", src: "imagens/pompoko.jpg"}/
+              %label.texto-img Pom Poko
+            .col
+              %a{href: "html/porco-rosso.html"}
+                %img.thumbnail{alt: "Porco Rosso", src: "imagens/porco-rosso.jpg"}/
+              %label.texto-img Porco Rosso
+            .col
+              %a{href: "html/memorias-de-ontem.html"}
+                %img.thumbnail{alt: "Memórias de Ontem", src: "imagens/memorias-de-ontem.jpg"}/
+              %label.texto-img Memórias de Ontem
+            .col
+              %a{href: "html/o-servico-de-entregas-da-kiki.html"}
+                %img.thumbnail{alt: "O Serviço de Entregas da Kiki", src: "imagens/kikis-delivery.jpg"}/
+              %label.texto-img O Serviço de Entregas da Kiki
+            .col
+              %a{href: "html/nausicaa-do-vale-do-vento.html"}
+                %img.thumbnail{alt: "Nausicaä do Vale do Vento", src: "imagens/Nausicaä-do-Vale-do-Vento.webp"}/
+              %label.texto-img Nausicaä do Vale do Vento
+            .col
+              %a{href: "html/o-tumulo-dos-vagalumes.html"}
+                %img.thumbnail{alt: "O Tumulo dos vagalumes", src: "imagens/o-tumulo-dos-vagalumes.png"}/
+              %label.texto-img O Túmulo dos vagalumes
+            .col
+              %a{href: "html/meus-vizinhos.html"}
+                %img.thumbnail{alt: "Meus vizinhos, Os Yamadas", src: "imagens/yamadas.jpg"}/
+              %label.texto-img Meus vizinhos, Os Yamadas
+            .col
+              %a{href: "html/aya-e-a-bruxa.html"}
+                %img.thumbnail{alt: "Aya e a Bruxa", src: "imagens/aya-e-a-bruxa.jpg"}/
+              %label.texto-img Aya e a Bruxa
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "assets/bootstrap.bundle.min.js"}

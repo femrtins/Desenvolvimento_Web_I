@@ -1,0 +1,165 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Vidas ao Vento
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-3.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Vidas ao Vento
+          %h2{lang: "ja"} 風立ちぬ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Vidas ao Vento", src: "../posters/poster-3.jpg"}/
+          %br/
+          %br/
+          %p Vidas ao Vento é um filme animado japonês lançado em 2013. A animação é uma cinebiografia ficcional de Jiro Horikoshi (1903-1982), projetista da aeronave de combate Mitsubishi A5M e seu sucessor, o Mitsubishi A6M Zero, usado pelo Império do Japão durante a Segunda Guerra Mundial.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 126 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Hideaki Anno
+                  %br>/
+                  Miori Takimoto
+                  %br>/
+                  Hidetoshi Nishijima
+                  %br>/
+                  Masahiko Nishimura
+                  %br>/
+                  Morio Kazama
+                  %br>/
+                  Keiko Takeshita
+                  %br>/
+                  Mirai Shida
+                  %br>/
+                  Jun Kunimura
+                  %br>/
+                  Shinobu Otake
+                  %br>/
+                  Mansai Nomura
+              %tr
+                %th Gênero
+                %td Drama
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Direção de arte
+                %td Yoji Takeshige
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Brasil", src: "../icons/bandeira-brasil.png"}/
+                %td 28 de fevereiro de 2014
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td US$ 30 milhões
+              %tr
+                %th Receita
+                %td US$ 136.454.220
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p A história tem como personagem principal Jiro Horikoshi, um jovem que pretende se tornar um especialista na criação e manuseio de aeronaves. Uma das referências mais notáveis ao longo da sua vida é o artista transalpino Giovanni Battista Caproni, um profissional muito famoso que alcançou grande prestígio devido à beleza das suas obras. Devido aos problemas de miopia desde criança — uma condição que o impediu de ser piloto —, Jiro decide se juntar a uma instituição poderosa de aeronáutica no final da década de 1930.
+          %p À medida que a trama se desenvolve, os seus chefes percebem seu talento inato e tomam a decisão de lhe dar total liberdade para construir qualquer categoria de aeronave. O filme narra os acontecimentos mais representativos e influentes de toda a sua existência, recriando o terremoto que ocorreu em Kanto, o tempo marcado pela crise e dificuldades mundiais, a propagação de diferentes doenças por toda a sociedade e o envolvimento do Império do Sol Nascente na Segunda Guerra Mundial.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Hayao Miyazaki começou a conceber uma história para ilustrar a vida de Jiro Horikoshi em 2008. Ele publicou a história como uma série de mangá na revista mensal Model Graphix de abril de 2009 a janeiro de 2010, com o título emprestado do romance de Tatsuo Hori, Kaze Tachinu. A história do mangá segue o relato histórico do desenvolvimento de aeronaves de Horikoshi até 1935 (o ano do voo inaugural da Mitsubishi A5M) e se entrelaça com encontros fictícios com Caproni e Naoko Satomi. As cenas com Naoko no mangá foram adotadas a partir do romance Kaze Tachinu, no qual Tatsuo Hori escreveu sobre sua experiência de vida com sua noiva, Ayako Yano, antes de morrer de tuberculose. O nome Naoko Satomi foi emprestado da protagonista feminina de outro romance de Tatsuo Hori, Naoko. Os personagens discutem frequentemente o romance de Thomas Mann, A Montanha Mágica e, em uma carta a Naoko, Jiro nomeia seu amigo alemão em fuga “Mr. Castorp” em homenagem a seu protagonista. O personagem em si é uma caricatura do ex-funcionário do Studio Ghibli, Steven Alpert, que voltou ao Japão para dar voz ao personagem.
+          %p Kaze Tachinu obteve uma recepção crítica muito favorável por parte da mídia japonesa e internacional. No agregador de resenhas Rotten Tomatoes, o filme marca uma pontuação de 88% com base em comentários de 179 críticos, e registra uma nota 7,9 de 10. No Metacritic, que atribui uma média aritmética ponderada com base em 100 comentários de críticos mainstream, o filme recebe uma pontuação média de 83 pontos com base em 41 resenhas, indicando "aclamação universal".
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/59U5FQ4kDEt11Q2UcFu1dK?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70293674"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/the-wind-rises/umc.cmc.184qbh86enrlfq7wbce3bf061?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

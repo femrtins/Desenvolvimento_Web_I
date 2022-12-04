@@ -1,0 +1,163 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Ponyo: Uma Amizade que Veio do Mar
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-12.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Ponyo: Uma Amizade que Veio do Mar
+          %h2{lang: "ja"} 崖の上のポニョ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Ponyo: Uma Amizade que Veio do Mar", src: "../posters/poster-12.jpg"}/
+          %br/
+          %br/
+          %p Gake no Ue no Ponyo é um filme de animação japonês que começou a ser escrito pelo famoso Hayao Miyazaki e produzido pelo Studio Ghibli em 2006. A data de estreia no Japão foi 19 de julho de 2008. O filme teve sua estreia no Brasil em 2 de julho de 2010.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 101 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Tomoko Yamaguchi
+                  %br>/
+                  Kazushige Nagashima
+                  %br>/
+                  Yuki Amami
+                  %br>/
+                  George Tokoro
+                  %br>/
+                  Yuria Nara
+                  %br>/
+                  Hiroki Doi
+                  %br>/
+                  Rumi Hiiragi
+                  %br>/
+                  Akiko Yano
+                  %br>/
+                  Kazuko Yoshiyuki
+                  %br>/
+                  Tomoko Naraoka
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Direção de arte
+                %td Noboru Yoshida
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th Lançamento
+                %td 19 de julho de 2008
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥3,4 bilhões
+              %tr
+                %th Receita
+                %td US$202,5 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Certa manhã, quando brinca na praia, o pequeno Sosuke encontra um peixe vermelho preso num frasco de doce. Sosuke liberta o peixinho do frasco, a quem dá o nome de Ponyo, e promete protegê-lo para sempre. Mas o pai de Ponyo, um feiticeiro que vive no fundo do mar, força o pequeno peixe a regressar às profundezas. Decidida a tornar-se humana, Ponyo foge para reencontrar Sosuke e espalha acidentalmente uma poção mágica pelo oceano, transformando as suas irmãs em ondas gigantes que ameaçam inundar a aldeia de Sosuke. O amor e a responsabilidade, o oceano e a vida, num mundo fantástico onde a magia também faz parte das coisas naturais do dia-a-dia.
+          %p O filme teve sua estreia nos cinemas brasileiros em 2 de julho de 2010. Saiu em DVD e BluRay pela PlayArte com dublagem e legendas em português. Atualmente está disponível junto a mais outros 20 filmes do Studio Ghibli na plataforma de streaming da Netflix.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p O diretor e roteirista do filme, Hayao Miyazaki, disse que o filme é influenciado de maneira abstrata pela história de Hans Christian Andersen, A Pequena Sereia. Juntamente com o diretor de animação Katsuya Kondo e o diretor de arte Noboru Yoshida, Miyazaki planejou um conjunto de objetivos que incluíam usar a animação tradicional inteiramente em Ponyo, buscando as possibilidades de animação e arte sem lutar sob as exigências do cronograma de produção, mostrando a qualidade da obra de arte de Yoshida além de celebrar a inocência e a alegria do universo infantil. A produção do Ponyo começou em maio de 2006, enquanto a animação principal começou em outubro daquele ano.
+          %p Alguns dos filmes anteriores do Studio Ghibli usavam CGI, mas toda a seção de computação gráfica do estúdio havia fechado antes da produção desse recurso, pois foi decidido que eles queriam se concentrar na animação desenhada à mão. Miyazaki estava intimamente envolvido com a animação desenhada à mão em Ponyo. Ele preferia desenhar o mar e as ondas, e gostava de experimentar como expressar essa parte importante do filme. O nível de desenho detalhado presente no filme resultou em 170.000 imagens individuais – um recorde para um filme de Miyazaki.
+          %p A vila litorânea onde a história se passa é inspirada em Tomonoura, uma cidade real no Parque Nacional de Setonaikai, no Japão, onde Miyazaki esteve em 2005. Algumas das cenas e cenários foram afetados pela ópera Die Walküre de Richard Wagner. A música também faz referência à ópera de Wagner. O personagem de Sosuke é baseado no filho de Miyazaki, Goro Miyazaki, quando ele tinha cinco anos. O nome de Sosuke é retirado do herói no romance The Gate pelo famoso romancista japonês Natsume Soseki.
+          %p Ponyo teve uma entrada no 65º Festival Internacional de Cinema de Veneza. Em 2009, Ponyo ganhou cinco prêmios no 8º anual Tokyo Anime Awards. Os prêmios incluíram “Anime do ano” e “Melhor longa-metragem nacional”. Miyazaki recebeu o prêmio de melhor diretor e melhor roteiro original, e Noboru Yoshida recebeu o prêmio de melhor direção de arte. O filme ganhou os prêmios de Animação do Ano e Melhor Destaque em Música no 32º Prêmio da Academia do Japão.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/15rOJIfBtL56saE9EIlocm?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70106454"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

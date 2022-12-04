@@ -1,0 +1,156 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Meus Vizinhos Os Yamadas
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-22.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Meus Vizinhos Os Yamadas
+          %h2{lang: "ja"} ホーホケキョとなりの山田くん
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Meus Vizinhos Os Yamadas", src: "../posters/poster-22.webp"}/
+          %br/
+          %br/
+          %p Meus Vizinhos os Yamadas é um filme japonês de animação de 1999, escrito e dirigido por Isao Takahata e produzido pelo Studio Ghibli. Diferente de outros filmes do Studio Ghibli, a animação de Takahata apresenta uma estética estilizada de tiras de quadrinhos, em relação ao estilo tradicional de animação de outras obras do estúdio.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 104 min
+              %tr
+                %th Direção
+                %td Isao Takahata
+              %tr
+                %th Produção
+                %td
+                  Takashi Shoji
+                  %br>/
+                  Seiichiro Ujiie
+              %tr
+                %th Roteiro
+                %td Isao Takahata
+              %tr
+                %th Elenco
+                %td
+                  Hayato Isobata
+                  %br>/
+                  Masako Araki
+                  %br>/
+                  Naomi Uno
+                  %br>/
+                  Touru Masuoka
+              %tr
+                %th Gênero
+                %td Comédia
+              %tr
+                %th Música
+                %td Akiko Yano
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Direção de arte
+                %td
+                  Yoji Takeshige
+                  %br>/
+                  Naoya Tanaka
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 17 de agosto de 1999
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥2 bilhões
+              %tr
+                %th Receita
+                %td ¥1,56 bilhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p O filme mostra o dia-a-dia da família Yamada, que é composta por Takashi (o pai, um trabalhador comum), Matsuko (a mãe, dona de casa), Shige (a sogra), Noboru (o filho adolescente), Nonoko (a filha criança) e Pochi (o cachorro da família). A história é dividida em quadros curtos, cada um focando algum ponto interessante do cotidiano da família, mais ou menos como se vê nas tirinhas de jornal. Trata de problemas que vemos em nossos próprios lares, como a exigência dos pais para que o filho adolescente estude mais, a mãe que não quer ser tratada como uma empregada, o pai que chega cansado demais do trabalho e tem que acordar cedo para uma reunião de negócios, o adolescente passando por crises existenciais, os pensamentos inocentes da criança.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Baseado no mangá yonkoma Nono-chan de Hisaichi Ishii, é o primeiro filme totalmente digital do Studio Ghibli. Takahata queria que o filme tivesse o estilo artístico das imagens em aquarela em vez de células de animação. Para conseguir isso, as técnicas tradicionais de pintura em tela foram substituídas pela tecnologia digital, tornando Meus Vizinhos os Yamadas o primeiro filme Ghibli a ter desenhos de animação pintados inteiramente em computadores.
+          %p Apesar das críticas positivas, o filme não se saiu tão bem nas bilheterias do Japão quanto outros filmes do Studio Ghibli. Meus Vizinhos os Yamadas recebeu um prêmio de excelência em animação em 1999, no Japan Media Arts Festival.
+        .div-wrap
+          %h3 Trilha Sonora
+          %p A trilha sonora foi composta por Akiko Yano e é caracterizada por temas bem curtos para piano. Há também peças clássicas tocadas pela Orquestra de Câmara Filarmônica Tcheca, conduzidas por Mario Klemens. Foi lançada pela Tokuma em 1 de julho de 1999.
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70035035"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

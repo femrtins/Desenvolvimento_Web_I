@@ -1,0 +1,175 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Pom Poko: A Grande Batalha dos Guaxinins
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-16.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Pom Poko: A Grande Batalha dos Guaxinins
+          %h2{lang: "ja"} 平成狸合戦ぽんぽこ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Pom Poko: A Grande Batalha dos Guaxinins", src: "../posters/poster-16.jpg"}/
+          %br/
+          %br/
+          %p Pom Poko – A Grande Batalha dos Guaxinins, foi o oitavo filme japonês de animação produzido pelo Studio Ghibli e tem roteiro e direção por Isao Takahata. Baseado no folclore japonês, os tanukis (animais asiáticos similares aos guaxinins) são retratados como uma espécie mística, travessa e alegre, mestre no disfarce e na troca de formas.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 119 min
+              %tr
+                %th Direção
+                %td Isao Takahata
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Isao Takahata
+              %tr
+                %th Produção Executiva
+                %td Hayao Miyazaki
+              %tr
+                %th Design de Personagem
+                %td Shinji Otsuka
+              %tr
+                %th Elenco
+                %td
+                  Yuriko Ishida
+                  %br>/
+                  Shigeru Izumiya
+                  %br>/
+                  Akira Kamiya
+                  %br>/
+                  Hayashiya Shozo IX
+                  %br>/
+                  Megumi Hayashibara
+              %tr
+                %th Gênero
+                %td
+                  Animação
+                  %br>/
+                  Comédia Dramática
+                  %br>/
+                  Fantasia
+                  %br>/
+                  Kemono
+              %tr
+                %th Música
+                %td
+                  Koryu
+                  %br>/
+                  Manto Watanobe
+                  %br>/
+                  Yoko Ino
+                  %br>/
+                  Masaru Goto
+                  %br>/
+                  Ryojiro Furusawa
+                  %br>/
+                  Yakusa Gakudan
+                  %br>/
+                  Shang Shang Typhoon
+              %tr
+                %th Cinematografia
+                %td Kazuo Oga
+              %tr
+                %th Direção de arte
+                %td Kazuo Oga
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 16 de julho de 1994
+              %tr
+                %th Idioma
+                %td Japonês
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Os guaxinins das colinas de Tama estão sendo expulsos de suas casas pelo rápido desenvolvimento de casas e shoppings. À medida que fica mais difícil encontrar comida e abrigo, eles decidem se unir e revidar.
+          %p Eles praticam e aperfeiçoam a antiga arte de transformação até que possam aparecer como humanos. De maneiras muitas vezes hilárias, os guaxinins usam seus poderes para tentar assustar o avanço da civilização. Mas será o suficiente? Ou os guaxinins aprenderão a viver em equilíbrio com o mundo moderno?
+          %p Divertidos e carinhosos, usam a metamorfose para se transformarem em quase tudo. Seus rivais são kitsune (raposas) e outros metamorfos. Visualmente, os tanukis neste filme foram retratados em três maneiras, em vários momentos como: animais realistas, antropomórficos, animais que ocasionalmente usam roupas. Algumas características foram parcialmente inspiradas do mangá de Shigeru Sugiura.
+          %p Os testículos proeminentes são parte integrante do folclore tanuki, e eles são mostrados ao longo do filme, e também usados com frequência em sua mudança de forma.
+        .div-wrap
+          %h3#Critica Crítica
+          %p Pom Poko foi o filme japonês número um no mercado doméstico em 1994, ganhando 2,63 bilhões de ienes em receita de distribuição e arrecadando 4,47 bilhões de dólares em receita total de bilheteria.
+          %p Foi escolhida como a inscrição japonesa para o Oscar de Melhor Filme em Língua Estrangeira naquele ano. Ganhou Melhor Filme de Animação no 49º Mainichi Film Awards.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/7tQlktNddJ8Qjbdi2Hi2mI?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70035036"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

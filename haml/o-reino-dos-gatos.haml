@@ -1,0 +1,161 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title O Reino dos Gatos
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-10.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 O Reino dos Gatos
+          %h2{lang: "ja"} 猫の恩返し
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme O Reinos dos Gatos", src: "../posters/poster-10.jpg"}/
+          %br/
+          %br/
+          %p O Reino dos Gatos é um filme japonês dirigido por Hiroyuki Morita, lançado em 2002 e produzido pelo Studio Ghibli. Baseado em Baron, Neko no Danshaku (literalmente “Barão, o gato barão”) de Aoi Hiiragi, O Reino dos Gatos segue Muta (o gato gordo em Sussurros do Coração) e Barão (do mesmo filme) quando eles tentam resgatar uma jovem garota chamada Haru que entrou no mundo dos gatos.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 75 min
+              %tr
+                %th Direção
+                %td Hiroyuki Morita
+              %tr
+                %th Storyboard
+                %td Hiroyuki Morita
+              %tr
+                %th Roteiro
+                %td Reiko Yoshida
+              %tr
+                %th Elenco
+                %td
+                  Chizuru Ikewaki
+                  %br>/
+                  Yoshihiko Hakamada
+                  %br>/
+                  Aki Maeda
+                  %br>/
+                  Takayuki Yamada
+                  %br>/
+                  Hitomi Sato
+                  %br>/
+                  Kenta Satoi
+                  %br>/
+                  Mari Hamada
+                  %br>/
+                  Tetsu Watanabe
+              %tr
+                %th Baseado
+                %td{lang: "ja"}
+                  Neko no Danshaku, Baron
+                  %br>/
+                  de Aoi Hiiragi
+              %tr
+                %th Gênero
+                %td Animação, Aventura e Fantasia
+              %tr
+                %th Música
+                %td Yuji Nomi
+              %tr
+                %th Cinematografia
+                %td Kentaro Takahashi
+              %tr
+                %th Edição
+                %td Megumi Uchida
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Brasil", src: "../icons/bandeira-brasil.png"}/
+                %td 13 de fevereiro de 2004
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td $20 milhões
+              %tr
+                %th Receita
+                %td $54 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Essa é a história de Haru, uma garota muito preguiçosa que todos os dias chega atrasada na escola. Um belo dia, voltando para casa, salva um misterioso gato de ser atropelado. Na mesma noite, a menina recebe a visita do Rei dos Gatos que a convida para conhecer o seu reino, um lugar mágico, diferente de tudo, onde os bichos falam e se comportam como gente. Haru não sabe, mas ela será obrigada a se casar com o Príncipe Lune. E mais: ela vai se transformar em uma gatinha muito simpática.
+        .div-wrap
+          %h3#Critica Produção
+          %p Em 1995, o Studio Ghibli lançou o filme Sussurros do Coração, baseado no mangá Mimi wo Sumaseba de Aoi Hiiragi, cujo tema trata de uma garota escrevendo um romance de fantasia. Embora a vida da garota não tivesse elementos mágicos, o filme mostrava cenas curtas de fantasia que descreviam cenas escritas pela protagonista sobre o Barão, personagem de seu romance. Ele era tão popular que uma sequência indireta foi feita. Desta vez a história trazia o Barão e uma outra garota, uma aluna do ensino médio chamada Haru, no qual Muta (personagem de Sussurros do Coração) também aparece.
+          %p O Reino dos Gatos começou como “Projeto Gato” em 1999. O Studio Ghibli recebeu um pedido de um parque temático japonês para criar um curta de 20 minutos com gatos como protagonistas. Hayao Miyazaki queria que três elementos-chave aparecessem no curta – estes eram o Barão, Muta e uma misteriosa loja de antiguidades. Hiiragi foi contratado para criar o mangá equivalente ao curta, chamado Neko no Danshaku, Baron que foi publicado em inglês pela Viz Media com o título Baron, The Cat Returns.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/1KDCap6BtIiJsmvilIA9oG?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70019058"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

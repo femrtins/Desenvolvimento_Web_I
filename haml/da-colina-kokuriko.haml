@@ -1,0 +1,170 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Da Colina Kokuriko
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-5.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Da Colina Kokuriko
+          %h2{lang: "ja"} コクリコ坂から
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Da Colina Kokuriko", src: "../posters/poster-5.jpg"}/
+          %br/
+          %br/
+          %p Da Colina Kokuriko é um filme de animação japonês de 2011 dirigido por Goro Miyazaki, com roteiro de Hayao Miyazaki e Keiko Niwa, produzido pelo Studio Ghibli. Este é o segundo trabalho de Goro Miyazaki para o Studio Ghibli. Sua estreia na direção ocorreu em Contos de Terramar, filme de 2006.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 92 min
+              %tr
+                %th Direção
+                %td Goro Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td
+                  Hayao Miyazaki
+                  %br>/
+                  Keiko Niwa
+              %tr
+                %th Elenco
+                %td
+                  Hideaki Anno
+                  %br>/
+                  Masami Nagasawa
+                  %br>/
+                  Junichi Okada
+                  %br>/
+                  Keiko Takeshita
+                  %br>/
+                  Yuriko Ishida
+                  %br>/
+                  Jun Fubuki
+                  %br>/
+                  Takashi Naito
+                  %br>/
+                  Shunsuke Kazama
+                  %br>/
+                  Nao Omori
+                  %br>/
+                  Teruyuki Kagawa
+              %tr
+                %th Baseado
+                %td
+                  Kokuriko-zaka kara
+                  %br>/
+                  por Chizuru Takahashi
+                  %br>/
+                  Tetsuro Sayama
+              %tr
+                %th Música
+                %td Satoshi Takebe
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 16 de julho de 2011
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥2,2 bilhões
+              %tr
+                %th Receita
+                %td US$61,5 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Yokohama, 1963. O Japão está se recuperando da devastação da Segunda Guerra Mundial e se preparando para sediar as Olimpíadas. Neste cenário de esperança e mudança, uma amizade começa a florescer entre os estudantes do ensino médio Umi e Shun. Mas um segredo oculto do passado surge para lançar uma sombra sobre o futuro e separá-los.
+          %p Da Colina Kokuriko não teve estreia no Brasil ou foi lançado em mídia física. A HBO, contudo, chegou a exibir algumas vezes o filme em sua grade de programação. Atualmente a animação está disponível junto a mais outros 20 filmes do Studio Ghibli na plataforma de streaming da Netflix.
+        .div-wrap
+          %h3#Critica Produção
+          %p Ambientado na década de 1960, Goro Miyazaki pesquisou inicialmente Yokohama, com a intenção de ser fiel aos detalhes históricos da cidade. No entanto, depois de perceber que “simplesmente encenar algo do tempo pode parecer real o suficiente, mas pode não ser necessariamente bonito”. Miyazaki decidiu mostrar o local como “cintilante e cheio de vida” do ponto de vista dos personagens. Ao projetar o Quartier Latin, Miyazaki trabalhou com os diretores de arte que adicionaram ideias sobre a “mistura de desordem nos muitos cômodos da casa” e tentaram “olhar a arquitetura do edifício, mas também lembrar os anos da faculdade e os desordem e imundície que [Miyazaki] viveu ”
+          %p Nos anos 60 se viu um aumento crescente do ativismo estudantil e das revoltas no campus no Japão e em outras partes do mundo, que refletiu diretamente em diversas cenas do filme. Em uma entrevista à imprensa dada após o terremoto e tsunami de Tohoku em 2011, foi anunciado que a produção do filme tinha sido afetada pelos apagões ocorridos após o desastre. Apesar do atraso, a equipe conseguiu dar continuidade trabalhando em horários alternativos para finalizar o filme dentro do prazo.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/6clRxNemmlm8kSfIJJtMNF?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70262786"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/la-colina-de-las-amapolas/umc.cmc.11uuzbwzfxszmzlkqj4m1yobx?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

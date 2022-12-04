@@ -1,0 +1,173 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Princesa Mononoke
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-15.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Princesa Mononoke
+          %h2{lang: "ja"} もののけ姫
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Princesa Mononoke", src: "../posters/poster-15.webp"}/
+          %br/
+          %br/
+          %p Princesa Mononoke é um filme de animação japonês dirigido por Hayao Miyazaki e produzido pelo Studio Ghibli. A data de estreia no Japão foi 12 de julho de 1997 e a estreia no restante do mundo aconteceu a partir de 1999.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 133 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Yoji Matsuda
+                  %br>/
+                  Yuriko Ishida
+                  %br>/
+                  Yuko Tanaka
+                  %br>/
+                  Kaoru Kobayashi
+                  %br>/
+                  Masahiko Nishimura
+                  %br>/
+                  Tsunehiko Kamijo
+                  %br>/
+                  Akihiro Miwa
+                  %br>/
+                  Mitsuko Mori
+                  %br>/
+                  Hisaya Morishige
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Direção de arte
+                %td
+                  Satoshi Kuroda
+                  %br>/
+                  Kazuo Oga
+                  %br>/
+                  Yoji Takeshige
+                  %br>/
+                  Naoya Tanaka
+                  %br>/
+                  Nizo Yamamoto
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 12 de julho de 1997
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥2,1 bilhões
+              %tr
+                %th Receita
+                %td US$159,4 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Após enfrentar um deus javali enfurecido, o príncipe Ashitaka é amaldiçoado com um mal que pode matá-lo. Para encontrar a cura, ele decide viajar para longe e acaba se envolvendo numa batalha entre os deuses animais da floresta e os moradores de uma vila de mineiros, que aos poucos estão destruindo a floresta.
+          %p Princesa Mononoke se passa no final do período Muromachi (aproximadamente 1336 a 1573) do Japão com elementos de fantasia. A história segue o envolvimento do jovem príncipe Emishi Ashitaka em uma luta entre os deuses de uma floresta e os humanos que consomem seus recursos. O termo “Mononoke” não é um nome, mas uma palavra japonesa para espírito ou monstro: seres sobrenaturais que mudam de forma.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p O diretor quis mostrar personagens de grupos párias e minorias oprimidas que raramente aparecem em filmes japoneses. Sua intenção não era criar uma história precisa do Japão Medieval, e sim “retratar o início do conflito aparentemente insolúvel entre o mundo natural e a civilização industrial moderna.” As paisagens que aparecem no filme foram inspiradas em Yakushima. Apesar de ter sido definido durante o período Muromachi, o período real de Princesa Mononoke descreve um “conflito nunca simbólico de três raças proto-japonesas (Jomon, Yamato e Emishi)”.
+          %p Princesa Mononoke foi principalmente desenhado à mão, mas incorpora algum uso de animação por computador em aproximadamente dez por cento do filme. A maior parte do filme é colorida com tinta tradicional, com base nos esquemas de cores projetados por Miyazaki e a colorista Michiyo Yasuda.
+          %p Princesa Mononoke foi o primeiro longa-metragem de animação a ganhar o Prêmio da Academia Japonesa de Melhor Filme. Para a cerimônia do 70º Oscar, foi a candidatura japonesa na categoria Oscar de Melhor Filme em Língua Estrangeira, mas não conseguiu a indicação.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/2ZHxPDTCRU5STetdmXeW6p?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/28630857"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/prinsessa-mononoke/umc.cmc.5sqttudjos4b07rysh0mlc0fl?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

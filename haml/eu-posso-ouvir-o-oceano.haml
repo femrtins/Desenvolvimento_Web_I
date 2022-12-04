@@ -1,0 +1,153 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Eu Posso Ouvir o Oceano
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-9.jpg");
+      	background-position: right;
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Eu Posso Ouvir o Oceano
+          %h2{lang: "ja"} 海がきこえる
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Eu Posso Ouvir o Oceano", src: "../posters/poster-9.jpg"}/
+          %br/
+          %br/
+          %p Ambientado na cidade de Kochi, na ilha japonesa de Shikoku, a história trata de um triângulo amoroso que se desenvolve entre dois melhores amigos e uma nova garota que é transferida para uma escola de Tóquio.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 72 min
+              %tr
+                %th Direção
+                %td Tomomi Mochizuki
+              %tr
+                %th Produção
+                %td
+                  Nozomu Takahashi
+                  %br>/
+                  Toshio Suzuki
+                  %br>/
+                  Seiji Okuda
+              %tr
+                %th Roteiro
+                %td Kaori Nakamura
+              %tr
+                %th Elenco
+                %td
+                  Nobuo Tobita
+                  %br>/
+                  Toshihiko Seki
+                  %br>/
+                  Yuko Sakamoto
+              %tr
+                %th Baseado
+                %td{lang: "ja"}
+                  Umi ga Kikoeru,
+                  %br/
+                  de Saeko Himuro
+              %tr
+                %th Gênero
+                %td Drama
+              %tr
+                %th Música
+                %td Shigeru Nagata
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 5 de maio de 1993
+              %tr
+                %th Idioma
+                %td Japonês
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Após o divórcio dos pais de Rikako, uma estudante de Tóquio, é transferida para um colégio de Kochi, uma cidade litorânea remota da capital. Ela é inteligente, se dedica muito aos estudos e aos esportes. Mas não consegue se adaptar à vida social da escola. No mesmo colégio estão Taku Morisaki e Yutaka Matsuno, que sempre foram melhores amigos, no entanto, Rikako ficará entre os dois.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p Esta é a primeira animação do Studio Ghibli dirigida por outra pessoa que não seja Hayao Miyazaki ou Isao Takahata. Tomomi Mochizuki, que tinha 34 anos na época, foi chamado para dirigir o filme. O filme foi uma tentativa de fazer uma animação única pelos jovens membros da equipe, principalmente em seus 20 e 30 anos. Seu lema era produzir “rápido, barato e com qualidade”, mas acabou não dando muito certo no final por causa do orçamento e da programação.
+          %p O livro homônimo no qual o filme é baseado foi ilustrado por Katsuya Kondo, que trabalhou em diversas animações do Studio Ghibli.A obra nunca foi lançada no Brasil, contudo, atualmente está disponível em versão legendada junto a mais outros 20 filmes do Studio Ghibli na plataforma de streaming Netflix.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/6nuyCZwPP0gdYpdoNCfhVU?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/80158668"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/aaltojen-kuohu/umc.cmc.1hrtsx1rgj0c4uyr7ksmhptvc?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

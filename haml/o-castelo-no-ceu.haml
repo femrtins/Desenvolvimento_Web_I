@@ -1,0 +1,159 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title O Castelo no Céu
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-13.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 O Castelo no Céu
+          %h2{lang: "ja"} 天空の城ラピュタ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme O Castelo no Céu", src: "../posters/poster-13.jpg"}/
+          %br/
+          %br/
+          %p O Castelo no Céu é um filme de animação japonês escrito e dirigido por Hayao Miyazaki, em 1986. Foi o primeiro filme de animação produzido oficialmente pelo Studio Ghibli. O filme retrata as aventuras de um menino e uma menina tentando proteger um cristal mágico de um grupo de agentes militares, enquanto procuram um lendário castelo flutuante. O filme foi distribuído pela Toei Company.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 124 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Isao Takahata
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Mayumi Tanaka
+                  %br>/
+                  Keiko Yokozawa
+                  %br>/
+                  Kotoe Hatsui
+                  %br>/
+                  Minori Terada
+              %tr
+                %th Gênero
+                %td Aventura
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Hirokata Takahashi
+              %tr
+                %th Direção de arte
+                %td
+                  Toshio Nozaki
+                  %br>/
+                  Nizo Yamamoto
+              %tr
+                %th Edição
+                %td
+                  Takeshi Seyama
+                  %br>/
+                  Yoshihiro Kasahara
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 2 de agosto de 1986
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥500 milhões
+              %tr
+                %th Receita
+                %td US$15,5 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Sheeta cai misteriosamente do céu nos braços de Pazu, um garoto que vive e trabalha em uma pequena cidade nas montanhas. Este encontro leva ambos a uma série de aventuras causadas pela perseguição de piratas do ar e do exército a Sheeta, que resulta numa busca pela verdadeira identidade dela e por Laputa, um misterioso castelo no céu.
+          %p À medida que a trama se desenvolve, os seus chefes percebem seu talento inato e tomam a decisão de lhe dar total liberdade para construir qualquer categoria de aeronave. O filme narra os acontecimentos mais representativos e influentes de toda a sua existência, recriando o terremoto que ocorreu em Kanto, o tempo marcado pela crise e dificuldades mundiais, a propagação de diferentes doenças por toda a sociedade e o envolvimento do Império do Sol Nascente na Segunda Guerra Mundial.
+        .div-wrap
+          %h3#Critica Produção &amp; Crítica
+          %p O Castelo no Céu recebeu a premiação Anime Grand Prix, realizada pela revista Animage, em 1986. O filme foi bem recebido pela crítica e arrecadou mais de 15 milhões de dólares em bilheteria e um total aproximado de 157 milhões de dólares, somando a a arrecadação de bilheteria, venda de vídeos caseiros e da trilha sonora. Nas pesquisas japonesas, foi votado como o segundo melhor filme de animação em 2006 no Japan Media Arts Festival e obteve o primeiro lugar, em 2008, em uma pesquisa de audiência da Oricon Inc. Considerado um marco no gênero steampunk, O Castelo no Céu tem forte influência na cultura popular japonesa e tem sido fonte de inspiração para fillmes e jogos, tanto no Japão quanto internacionalmente.
+          %p Na série de anime Mirai Shōnen Konan (1978), Miyazaki apresentou uma soma de elementos que seguidamente adaptou em O Castelo no Céu; a exemplo os personagens que serviram como base para Pazu e Sheeta, além de temas que definiram o projeto. O nome "Laputa" (ラピュタ Rapyuta) é derivado do romance As Viagens de Gulliver, de Jonathan Swift, onde também é usada para descrever uma ilha flutuante. De acordo com Anthony Lioi, há certa semelhança entre ambos, pois a superioridade tecnológica da ilha é utilizada para fins políticos.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/playlist/2SKsrmhs7Qqm3012D36JnU?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/60027393"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/el-castillo-en-el-cielo/umc.cmc.516swa7pdvopljazl2r52h72e?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

@@ -1,0 +1,166 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title Nausicaä do Vale do Vento
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-20.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 Nausicaä do Vale do Vento
+          %h2{lang: "ja"} 風の谷のナウシカ
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme Nausicaä do Vale do Vento", src: "../posters/poster-20.jpg"}/
+          %br/
+          %br/
+          %p Nausicaä do Vale do Vento é um filme de animação japonês de 1984 do escritor, diretor e ilustrador Hayao Miyazaki, baseado em um mangá de mesmo nome publicado em 1982 nas páginas da revista Animage. O lançamento do filme se deu antes da fundação do Studio Ghibli, que posteriormente adquiriu seus direitos.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 117 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Sumi Shimamoto
+                  %br>/
+                  Goro Naya
+                  %br>/
+                  Yoji Matsuda
+                  %br>/
+                  Yoshiko Sakakibara
+                  %br>/
+                  Iemasa Kayumi
+              %tr
+                %th Gênero
+                %td
+                  Aventura
+                  %br>/
+                  Fantasia Científica
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td
+                  Koji Shiragami
+                  %br>/
+                  Yukitomo Shudo
+                  %br>/
+                  Yasuhiro Shimizu
+                  %br>/
+                  Mamoru Sugiura
+              %tr
+                %th Direção de arte
+                %td Mitsuki Nakamura
+              %tr
+                %th Edição
+                %td
+                  Tomoko Kida
+                  %br>/
+                  Naoko Kaneko
+                  %br>/
+                  Masatsugu Sakai
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th
+                  Lançamento
+                  %img#bandeira{alt: "Bandeira do Japão", src: "../icons/bandeira-japao.png"}/
+                %td 11 de março de 1984
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥180 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Após os Sete Dias de Fogo, uma guerra que destruiu a civilização humana e a maior parte do ecossistema da Terra, surge uma floresta que exala gases venenosos. Apenas insetos e um ser conhecido como Ohmu vivem por lá. Nausicaä, filha do rei do Vale do Vento, tem o estranho poder de conseguir sentir o que a floresta sente e se vê obrigada a sair em uma jornada para tentar evitar outra guerra devastadora.
+          %p A princesa Nausicaä é carismática, jovem e corajosa. Seu nome vem da personagem Nausicaä da Odisséia. Parte de sua personalidade veio do conto do folclore japonês A princesa que amava insetos.
+        .div-wrap
+          %h3#Critica Contexto
+          %p Hayao Miyazaki prima pelos detalhes. A animação encanta pela aparente simplicidade das linhas e dos movimentos, algo que certamente tem muito de complexo tecnicamente. Inovando ao mostrar uma protagonista feminina mais destemida que os homens em cena, o japonês faz ao mesmo tempo um belíssimo libelo ecológico – denunciando a ignorância da nossa raça a respeito de determinados sinais emitidos pela natureza – e afronta a sanha expansionista. Assim sendo, Nausicaä do Vale do Vento é um filme extremamente atual, por abordar questões ainda latentes e urgentes. A coragem da menina é o estandarte de um novo mundo que pode surgir, desde que as pessoas parem de digladiar, que estejam abertas ao meio circundante e à sua sabedoria nem sempre compreendida, e que valorizem a essência. Exemplo disso, ao contrário do que pensam todos, os Ohmus valem bem mais do que suas carapaças mortas, matéria-prima de armas e outros instrumentos de ferir.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/6cmEkUHUP69COQ0MDPhJN7?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/70019062"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+          %a{href: "https://tv.apple.com/br/movie/nausicaa---prinsessen-fra-vindens-dal/umc.cmc.5a19fikldgwe4cnl8smazz6tx?action=play"}
+            %img.icon{alt: "AppleTv", src: "../icons/apple.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}

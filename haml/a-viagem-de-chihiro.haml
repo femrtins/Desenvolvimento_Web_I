@@ -1,0 +1,160 @@
+!!!
+%html{lang: "pt-br"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "Studio Ghibli", name: "description"}/
+    %meta{content: "Crislanne & Fernanda", name: "author"}/
+    %title A Viagem de Chihiro
+    / Icone
+    %link{href: "../icons/favicon/apple-icon-57x57.png", rel: "apple-touch-icon", sizes: "57x57"}/
+    %link{href: "../icons/favicon/apple-icon-60x60.png", rel: "apple-touch-icon", sizes: "60x60"}/
+    %link{href: "../icons/favicon/apple-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}/
+    %link{href: "../icons/favicon/apple-icon-76x76.png", rel: "apple-touch-icon", sizes: "76x76"}/
+    %link{href: "../icons/favicon/apple-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}/
+    %link{href: "../icons/favicon/apple-icon-120x120.png", rel: "apple-touch-icon", sizes: "120x120"}/
+    %link{href: "../icons/favicon/apple-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}/
+    %link{href: "../icons/favicon/apple-icon-152x152.png", rel: "apple-touch-icon", sizes: "152x152"}/
+    %link{href: "../icons/favicon/apple-icon-180x180.png", rel: "apple-touch-icon", sizes: "180x180"}/
+    %link{href: "../icons/favicon/android-icon-192x192.png", rel: "icon", sizes: "192x192", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-96x96.png", rel: "icon", sizes: "96x96", type: "image/png"}/
+    %link{href: "../icons/favicon/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}/
+    %link{href: "../icons/favicon/manifest.json", rel: "manifest"}/
+    %meta{content: "#ffffff", name: "msapplication-TileColor"}/
+    %meta{content: "../icons/favicon/ms-icon-144x144.png", name: "msapplication-TileImage"}/
+    %meta{content: "#ffffff", name: "theme-color"}/
+    / Bootstap
+    %link{href: "https://getbootstrap.com/docs/5.2/examples/album/", rel: "canonical"}/
+    / Fontes Google
+    %link{href: "https://fonts.googleapis.com", rel: "preconnect"}/
+    %link{crossorigin: "", href: "https://fonts.gstatic.com", rel: "preconnect"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=VT323&display=swap", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap", rel: "stylesheet"}/
+    / Css e JavaScript
+    %link{href: "../css/style-filmes.css", rel: "stylesheet"}/
+    %link{href: "../assets/bootstrap.min.css", rel: "stylesheet"}/
+    :css
+      .div-box{
+      	background-image: url("../covers/cover-1.jpg");
+      }
+  %body
+    .div-box
+      %header
+        / Navegador
+        %nav.navbar{"aria-label" => "barra de navegação"}
+          .container-fluid
+            / Logo
+            %a#logo{href: "../index.html"}
+              %img#imagem-logo{alt: "susuwatari", src: "../icons/logo2.png"}/
+            / Pesquisa
+            .container-out
+              .search-container
+                %form#search-engine
+                  %input#search{autocomplete: "off", autofocus: "", name: "filmes", onblur: "desfocus()", placeholder: "Pesquisar", type: "text"}/
+                  %input#search_submit{name: "abre ou limpa", type: "button"}/
+                  #search-results
+                #search-data
+        .texto-cover
+          %h1 A Viagem de Chihiro
+          %h2{lang: "ja"} 千と千尋の神隠し
+    %main
+      .filme
+        .div-wrap
+          %img#poster{alt: "Poster do Filme A Viagem de Chiriro", src: "../posters/poster-1.jpg"}/
+          %br/
+          %br/
+          %p A Viagem de Chihiro é um filme japonês de animação, dos gêneros aventura e fantasia, lançado em 2001. Miyazaki escreveu o roteiro após decidir que a história seria baseada na filha de seu amigo Seiji Okuda, produtor associado do filme, que tinha dez anos na época; a garota fazia visitas frequentes à casa do diretor todo verão.
+        .div-wrap
+          %h3 Informações
+          %table.ghibli-table
+            %tbody
+              %tr
+                %th Duração
+                %td 125 min
+              %tr
+                %th Direção
+                %td Hayao Miyazaki
+              %tr
+                %th Produção
+                %td Toshio Suzuki
+              %tr
+                %th Roteiro
+                %td Hayao Miyazaki
+              %tr
+                %th Elenco
+                %td
+                  Rumi Hiiragi
+                  %br>/
+                  Miyu Irino
+                  %br>/
+                  Mari Natsuki
+                  %br>/
+                  Takeshi Naito
+                  %br>/
+                  Yasuko Sawaguchi
+                  %br>/
+                  Tsunehiko Kamijo
+                  %br>/
+                  Takehiko Ono
+                  %br>/
+                  Bunta Sugawara
+              %tr
+                %th Gênero
+                %td Fantasia
+              %tr
+                %th Música
+                %td Joe Hisaishi
+              %tr
+                %th Cinematografia
+                %td Atsushi Okui
+              %tr
+                %th Direção de arte
+                %td
+                  Norobu Yoshida
+                  %br>/
+                  Yoji Takeshige
+              %tr
+                %th Edição
+                %td Takeshi Seyama
+              %tr
+                %th Companhia(s) produtora(s)
+                %td Studio Ghibli
+              %tr
+                %th Lançamento
+                %td 18 de julho de 2003
+              %tr
+                %th Idioma
+                %td Japonês
+              %tr
+                %th Orçamento
+                %td ¥ 2 bilhões
+              %tr
+                %th Receita
+                %td US$ 347,7 milhões
+        .div-wrap
+          %h3#sinopse Sinopse
+          %p Chihiro e seus pais são obrigados a se mudarem para outra cidade. Durante a mudança seu pai decide tomar um atalho para economizar tempo, porém, acabam se perdendo e chegando em um edifício com um estranho túnel no centro. Ainda que Chihiro se negue a entrar, seus pais insistem em seguir pelo túnel adentro. Do outro lado, descobrem um povoado aparentemente abandonado; a família opta em explorar o lugar e acabam encontrando um restaurante o qual decidem parar para comer. Chihiro deixa-os para continuar investigando. Quando começa a anoitecer um misterioso jovem chamado Haku aparece e ordena que Chihiro saia do lugar antes que anoiteça completamente.
+          %p Chihiro corre em busca dos pais, enquanto pouco a pouco a cidade vai ganhando vida: os postes acendem e aparecem uma variedade de espíritos. Ao chegar ao restaurante, Chihiro descobre que seus pais se tornaram enormes porcos. Aterrorizada, a jovem foge e começa a se dar conta que está ficando transparente. Haku, que aparece novamente, diz que para ela não desaparecer deve comer algo deste mundo e lhe oferece uma baga. Depois disto, leva-a secretamente a uma casa de banhos termais em que deve aceitar um trabalho antes que possa ajudá-la a escapar. Assim, com a ajuda de vários amigos que faz ao longo da história, Chihiro inicia uma grande aventura para buscar uma maneira de acabar com o feitiço que mantém a família dela em porcos e poder continuar com sua vida livre.
+        .div-wrap
+          %h3#Critica Crítica &amp; Prêmios
+          %p A Viagem de Chihiro foi aclamado pela crítica. No site Rotten Tomatoes, o filme possui 97% de aceitação entre os críticos, com um total de 152 comentários e com uma qualificação média de 8,5/10. O consenso entre os críticos é: “ A Viagem de Chihiro é uma deslumbrante, encantadora e magnífica elaborada história que deixará os espectadores um pouco mais curiosos e fascinados pelo mundo que os rodeia”.
+          %p A Viagem de Chihiro ganhou trinta e cinco prêmios, entre os quais incluem o Oscar de Melhor Filme de Animação em 2003. Assim, se tornou o segundo filme a receber esta condecoração, pois a categoria se iniciou em 2002, sendo o único filme em língua não-inglesa a ganhar o prêmio até agora. Na vigésima quinta premiação dos Prêmios da Academia Japonesa – o equivalente japonês do Oscar – recebeu os prêmios de melhor filme do ano e melhor canção. No Festival Internacional do Cinema de Berlim de 2002, o longa-metragem conquistou o Urso de Ouro, ex aequo com Domingo sangrento, sendo a única animação a consegui-lo até o momento.
+        .div-wrap
+          %h3 Trilha Sonora
+          %iframe{allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture", allowfullscreen: "", loading: "lazy", src: "https://open.spotify.com/embed/album/766a5fKJYFy9ii4Kz2bQy9?utm_source=generator", style: "border-radius:12px; width: 100%; height: 380px;", title: "Playlist da Trilha Sonora no Spotify"}
+        #div-wrap-assista.div-wrap
+          %h3 Assista em
+          %a{href: "https://www.netflix.com/br/title/60023642"}
+            %img.icon{alt: "Netflix", src: "../icons/netflix.png"}/
+    %footer
+      #rodape
+        %button#scroll-up
+          %span#seta ➜
+        %img#imagem-logo2{alt: "susuwatari", src: "../icons/logo1.png"}/
+      #texto-rodape
+        %p Textos e Informações retirados da Wikipedia e do site Studio Ghibli Brasil | Criado por Fernanda &amp; Crislanne | 2022
+    %script{src: "../js/javascript.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "../assets/bootstrap.bundle.min.js"}
